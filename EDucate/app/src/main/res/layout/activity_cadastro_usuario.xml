@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroUsuario"
+    android:background="#D94A3D">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/botao_fechar"
+        android:text="@string/botao_fechar"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#70FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="fechar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/exo2_light"
+        android:letterSpacing="0.2"
+        android:text="@string/cadastro"
+        android:textColor="#20FFFFFF"
+        android:textAllCaps="true"
+        android:textFontWeight="@integer/material_motion_duration_short_1"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="415dp"
+        android:layout_height="580dp"
+        android:background="@drawable/layout_redondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/exo2_bold"
+                android:text="@string/ola"
+                android:textSize="40sp"
+                />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/exo2_medium"
+                android:text="@string/frase_cadastro"
+                android:textColor="#979696"
+
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/nome_usuario"
+                android:fontFamily="@font/exo2"
+                android:textColor="#979696"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress4"
+                android:layout_width="343dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/exo2"
+
+                android:layout_marginTop="10dp"
+                android:background="@drawable/inputs_redondos"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/telefone_perfil"
+                android:fontFamily="@font/exo2"
+
+                android:textColor="#979696"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword03"
+                android:layout_width="343dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/inputs_redondos"
+                android:ems="10"
+                android:fontFamily="@font/exo2"
+
+                android:inputType="text|phone"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/email_login"
+                android:fontFamily="@font/exo2"
+
+                android:textColor="#979696"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword2"
+                android:layout_width="343dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/inputs_redondos"
+                android:ems="10"
+                android:fontFamily="@font/exo2"
+
+                android:inputType="text|textWebEmailAddress"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView04"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/senha_login"
+                android:fontFamily="@font/exo2"
+
+                android:textColor="#979696"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="343dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/inputs_redondos"
+                android:ems="10"
+                android:fontFamily="@font/exo2"
+
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/botao_redondo_laranja"
+                android:fontFamily="@font/exo2_bold"
+                android:text="@string/btn_cadastrar_usuario"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:onClick="alerta"
+                />
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

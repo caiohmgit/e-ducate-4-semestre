@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">E - Ducate</string>
+
+    <!--    Tela de contato-->
+
+    <string name="contato">Contato</string>
+    <string name="primeiro_nome">Primeiro nome:</string>
+    <string name="ex_primeiro_nome_contato">Ex. Amanda</string>
+    <string name="ultimo_nome">Último nome:</string>
+    <string name="ex_ultimo_nome_contato">Ex. Magalhães</string>
+    <string name="email_contato">E-mail:</string>
+    <string name="ex_email_contato">Ex. seu.email@dominio.com</string>
+    <string name="numero_celular_contato">Número de celular:</string>
+    <string name="ex_nro_celular_contato">Ex. (00) 12345-6789</string>
+    <string name="mensagem_contato">Mensagem:</string>
+    <string name="ex_mensagem_contato">Escreva uma breve mensagem sobre o problema que está enfrentando ou sugestão sobre o E-Ducate</string>
+    <string name="btn_enviar">Enviar</string>
+
+    <!--    Tela de cadastro Biblio -> Primeiro passo-->
+
+    <string name="cadastro_biblioteca">Cadastrar Biblioteca</string>
+    <string name="primeiro_passo">Primeiro passo:</string>
+    <string name="informacoes_basicas">Informações Básicas</string>
+    <string name="nome_biblioteca">Nome da Biblioteca</string>
+    <string name="exemplo_nome_biblio">Ex. Biblioteca da Faculdade BandTec</string>
+    <string name="horario_funcionamento">Horário de funcionamento:</string>
+    <string name="exemplo_horario_func">Ex. 10:30 às 19:30</string>
+    <string name="possui_espaco_home">Possui espaço para Trabalho/Estudo?</string>
+    <string name="switch_homeoffice">Sim</string>
+    <string name="btn_proximo">Próximo</string>
+
+    <!--    Tela de cadastro Biblio -> Segundo passo-->
+    <string name="segundo_passo">Segundo passo:</string>
+
+    <string name="endereco">Endereço</string>
+    <string name="cep">CEP (XXXX-XXX)</string>
+    <string name="exemplo_cep">Ex. 01414-001</string>
+    <string name="logradouro">Logradouro (Rua, Avenida)</string>
+    <string name="exemplo_logradouro">Ex. Rua Haddock Lobo</string>
+    <string name="numero_biblioteca">Número</string>
+    <string name="exemplo_numero_biblioteca">Ex. 595</string>
+    <string name="bairro">Bairro</string>
+    <string name="exemplo_bairro">Ex. Paulista</string>
+    <string name="cidade">Cidade</string>
+    <string name="exemplo_cidade">Ex. São Paulo</string>
+    <string name="estado_biblioteca">Estado</string>
+    <string name="exemplo_estado">Ex. SP</string>
+
+
+    <!--    Tela principal de Editar Biblioteca-->
+
+    <string name="editar_biblioteca">Editar Biblioteca</string>
+    <string name="btn_editar_foto_biblio">Alterar foto de Exibição</string>
+    <string name="btn_informacoes_basicas">Informações Básicas</string>
+    <string name="btn_endereco">Endereço</string>
+    <string name="btn_palavras_chaves">Palavras Chaves</string>
+    <string name="btn_visualizacao">Visualização</string>
+    <string name="btn_voltar">Voltar</string>
+
+    <!--    Tela de editar informações básicas da Biblioteca-->
+
+    <string name="info_basicas">Informações Básicas:</string>
+    <string name="btn_atualizar">Atualizar</string>
+    <string name="nome_setado_biblio">Biblioteca Faculdade BandTec</string>
+    <string name="horario_setado_biblio">10:30 às 19:30</string>
+
+
+    <!--Tela de editar informações de endereço da Biblioteca-->
+
+    <string name="cep_setado_biblio">01414-001</string>
+    <string name="logradouro_setado_biblio">Rua Haddock Lobo</string>
+    <string name="numero_setado_biblio">595</string>
+    <string name="cidade_setado_biblio">São Paulo</string>
+    <string name="bairro_setado_biblio">Paulista</string>
+    <string name="estado_setado_biblio">SP</string>
+
+    <!--    Tela de adicionar Livro-->
+
+    <string name="adicionar_livro">Adicionar livro</string>
+    <string name="nome_livro">Nome do Livro</string>
+    <string name="ex_nome_livro">Ex. Harry Potter</string>
+    <string name="autor_livro">Autor</string>
+    <string name="genero_livro">Gênero</string>
+    <string name="ex_genero_livro">Ex. Aventura</string>
+    <string name="ex_autor_livro">Ex. J. K. Rowling</string>
+    <string name="editora_livro">Editora</string>
+    <string name="ex_editora_livro">Ex. Rocco</string>
+    <string name="btn_cadastrar_livro">Cadastrar Livro</string>
+    <string name="btn_adicionar_img_livro">Adicionar foto de capa ao livro</string>
+
+
+    <!--    Tela de visualização core da Biblioteca (ADM)-->
+
+    <string name="nome_da_biblioteca">Biblioteca do Colégio da Trindade</string>
+    <string name="descricao_da_biblioteca">Biblioteca para uso público de ótimo conforto e disponibilidade localiizada no colégio da trindade</string>
+    <string name="titulo_endereco_biblio">Endereço</string>
+    <string name="endereco_biblioteca">Av. Paulista, 229 - Paulista</string>
+    <string name="titulo_horario_func">Horário Funcionamento</string>
+    <string name="horario_func_biblioteca">10h às 19h</string>
+    <string name="titulo_favoritos_biblio">Favoritos</string>
+    <string name="numero_favoritos_biblio">22</string>
+    <string name="titulo_espaco_estudo">Espaço para Estudo/Trabalho</string>
+    <string name="biblioteca_possui_espaco_estudo">Sim</string>
+    <string name="btn_editar_biblioteca">Editar Biblioteca</string>
+    <string name="btn_livros_em_destaque">Livros em Destaque</string>
+
+
+    <!--    Tela de cadastro de Biblioteca -> Terceiro Passo e Quarto passo-->
+
+    <string name="ultimo_passo">Último passo (Opcional):</string>
+    <string name="deixe_visualizacao_sua_biblioteca">Deixe a visualização da sua Biblioteca ainda mais completa!</string>
+    <string name="adicione_uma_descricao">Adicione uma Descrição à sua Biblioteca:</string>
+    <string name="descreva_rapidamente_desc">Descreva brevemente sua biblioteca, citando suas qualidades e o que ela tem a oferecer...</string>
+    <string name="adicione_uma_foto">Adicione uma foto da sua Biblioteca</string>
+    <string name="dados_pessoais">Dados Pessoais</string>
+    <string name="se_atente_ao_que_pede">Atente-se ao que pede e preencha adequadamente os campos.</string>
+    <string name="terceiro_passo">Terceiro Passo:</string>
+    <string name="palavras_chaves">Palavras chaves</string>
+    <string name="selecione_oito_palavras">Selecione até 8 palavras:</string>
+    <string name="acesso_a_internet">Acesso à Internet</string>
+    <string name="espaçoes_de_estudo">Espaçoes de estudo</string>
+    <string name="livros_científicos">Livros científicos</string>
+    <string name="computadores_disponíveis">Computadores disponíveis</string>
+    <string name="variedade_de_livros">Variedade de livros</string>
+    <string name="espaço_silencioso">Espaço silencioso</string>
+    <string name="espaço_de_trabalho">Espaço de trabalho</string>
+    <string name="eventos_culturais">Eventos culturais</string>
+    <string name="aluguel_de_livros">Aluguel de livros</string>
+    <string name="espaço_ao_ar_livre">Espaço ao ar livre</string>
+    <string name="livros_infantís">Livros infantís</string>
+    <string name="compra_de_livros">Compra de livros</string>
+    <string name="btn_concluir">Concluir cadastro</string>
+
+
+    <!--    Tela de visualizar e editar perfil  -->
+
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="btn_editar_foto_perfil">Alterar foto de perfil</string>
+    <string name="nome_setado_perfil">Amanda Souza Magalhães</string>
+    <string name="nome_usuario">Nome Completo</string>
+    <string name="email_perfil">E-mail</string>
+    <string name="email_setado_perfil">amandasm1998@gmail.com</string>
+    <string name="telefone_perfil">Telefone</string>
+    <string name="telefone_setado_perfil">(11) 95631-2279</string>
+    <string name="btn_salvar_perfil">Salvar alterações</string>
+    <string name="meu_perfil">Meu Perfil</string>
+    <string name="btn_editar_perfil">Editar informações</string>
+
+
+    <!--    Tela de inicial, login, cadastro e recuperar senha-->
+
+    <string name="btn_entrar">Entrar</string>
+    <string name="btn_cadastrar_usuario">Cadastrar</string>
+    <string name="login">LOGIN</string>
+    <string name="botao_fechar">X</string>
+    <string name="ola">Hello</string>
+    <string name="frase_de_bemvindo">Encontre aqui uma bilbioteca!</string>
+    <string name="email_login">E-mail</string>
+    <string name="senha_login">Senha</string>
+    <string name="esqueceu_senha">Esqueceu a Senha?</string>
+    <string name="btn_cadastre_se">Cadastre-se</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="frase_cadastro">Crie sua conta com a gente!</string>
+    <string name="recuperar_senha">Recuperar Senha</string>
+    <string name="frase_recuperar_senha">Insira o e-mail que usou em seu cadastro para que possamos mandar uma solicitação para redefinir sua senha</string>
+    <string name="email_cadastrado">E-mail  Cadastrado</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="possui_espaco_home">Possui espaço para Trabalho/Estudo?</string>
+
+
+</resources>

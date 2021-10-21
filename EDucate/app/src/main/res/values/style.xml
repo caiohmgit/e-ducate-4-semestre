@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="image_header_edit_biblio" parent="">
+
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+
+
+    </style>
+
+    <style name="image_exibicao_biblio" parent="">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50dp</item>
+
+
+    </style>
+
+    <style name="image_perfil" parent="">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50dp</item>
+
+
+    </style>
+
+    <style name="headerCadastroBiblio" parent="">
+
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+
+
+    </style>
+
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarPerfil">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="411dp"
+            android:layout_height="222dp"
+            android:background="@drawable/custom_header_add_livros"
+            android:orientation="vertical"
+            android:id="@+id/rl_header">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/exo2_light"
+                android:text="@string/editar_perfil"
+                android:textColor="#A3FFFFFF"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/ic_circle_close_grey" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="335dp"
+                android:layout_marginTop="40dp"
+                android:onClick="irTelaPrincipalBiblio"
+                android:src="@drawable/ic_close" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="70dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/fotoperfil"
+                app:shapeAppearanceOverlay="@style/image_perfil" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/custom_foreground_image_shape" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="205dp"
+                android:layout_marginRight="115dp"
+                android:background="@drawable/custom_button_alterar_foto"
+                android:fontFamily="@font/exo2_regular"
+                android:padding="5dp"
+                android:text="@string/btn_editar_foto_perfil"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="19.5sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="@font/exo2_bold"
+                android:text="@string/nome_usuario"
+                android:textColor="@color/cinza_tom_escuro"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="@font/exo2_medium"
+                android:text="@string/nome_setado_perfil"
+                android:textColor="#9A000000" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="@font/exo2_bold"
+                android:text="@string/email_perfil"
+                android:textColor="@color/cinza_tom_escuro"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="@font/exo2_medium"
+                android:text="@string/email_setado_perfil"
+                android:textColor="#9A000000" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="@font/exo2_bold"
+                android:text="@string/telefone_perfil"
+                android:textColor="@color/cinza_tom_escuro"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="@font/exo2_medium"
+                android:text="@string/telefone_setado_perfil"
+                android:textColor="#9A000000" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/custom_orange_defaut_button"
+                android:drawableEnd="@drawable/ic_save"
+                android:fontFamily="@font/exo2_bold"
+                android:paddingStart="10dp"
+                android:paddingEnd="15dp"
+                android:text="@string/btn_salvar_perfil"
+                android:textColor="@color/white"
+                android:onClick="fechar"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
