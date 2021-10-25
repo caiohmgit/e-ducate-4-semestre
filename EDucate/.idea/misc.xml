@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/custom_favorite_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/custom_search_biblio_item.xml" value="0.3828125" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/custom_search_input.xml" value="0.3828125" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/ic_favorite.xml" value="0.3828125" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/ic_location.xml" value="0.3828125" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/activity_editar_biblio_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/activity_meu_perfil.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/activity_pesquisa_bibliotecas.xml" value="0.33" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/activity_visualizacao_core_biblio_adm.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Tapps/android-studio/EDucate/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Tapps/android-studio/EDucate/app/src/main/res/drawable/custom_biblio_info_layout.xml" value="0.2203125" />
         <entry key="..\:/Users/Tapps/android-studio/EDucate/app/src/main/res/drawable/custom_biblio_layout.xml" value="0.34629629629629627" />
