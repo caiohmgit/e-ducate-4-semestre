@@ -167,11 +167,25 @@
     <string name="btn_cancelar">Cancelar</string>
 
     <!--    Tela de pesquisa de biblioteca-->
-    <string name="possui_espaco_home">Possui espaço para Trabalho/Estudo?</string>
     <string name="busca_por_bibliotecas">Busca por Bibliotecas</string>
     <string name="hint_pesquisa_biblio">Digite um nome ou localização para buscar</string>
     <string name="resultado_pesquisa">Resultado para busca de \"XXXXXX\"</string>
     <string name="btn_filtar">Filtrar</string>
+
+    <!--    Tela de ajuda-->
+
+    <string name="titulo_tela_ajuda">Dificuldades em navegar no APP?</string>
+    <string name="mensagem_tela_contato">Não se preocupe, preparamos um guia rápido para te ajudar com todas as funcionalidades presentes no aplicativo!</string>
+    <string name="orientacao_clicar_botao_ajuda">Legal né?! Clique no Botão abaixo e faça o download do Guia agora mesmo!</string>
+    <string name="btn_baixar_pdf">Baixar PDF</string>
+
+    <!--    Main Screen User-->
+
+    <string name="bem_vindo">Bem Vindo(a),</string>
+    <string name="primeiro_nome_usuario">Amanda</string>
+    <string name="bibliotecas_recomendadas">Bibliotecas Recomendadas</string>
+    <string name="biblioteca_publica">Biblioteca Pública</string>
+    <string name="numero_estrelas_biblio">4.8</string>
 
 
 </resources>

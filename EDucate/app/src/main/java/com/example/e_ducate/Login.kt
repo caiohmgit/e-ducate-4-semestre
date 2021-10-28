@@ -20,6 +20,10 @@ class Login : AppCompatActivity() {
         startActivity(Intent(this, CadastroBiblio1::class.java))
     }
 
+    fun irTelaPrincipalUsuario(v: View){
+        startActivity(Intent(this, MenuPrincipalUsuario::class.java))
+    }
+
     fun fechar(v: View){
         exitProcess(0)
     }

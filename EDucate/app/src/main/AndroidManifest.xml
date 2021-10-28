@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EDucate">
         <activity
+            android:name=".MenuPrincipalUsuario"
+            android:exported="true" />
+        <activity
+            android:name=".TelaAjuda"
+            android:exported="true" />
+        <activity
             android:name=".PesquisaBibliotecas"
             android:exported="true" />
         <activity

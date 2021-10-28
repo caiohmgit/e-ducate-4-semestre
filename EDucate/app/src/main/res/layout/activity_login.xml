@@ -148,7 +148,7 @@
                 android:background="@drawable/botao_redondo_laranja"
                 android:fontFamily="@font/exo2_bold"
                 android:textSize="20sp"
-                android:onClick="irTelaCadastroBiblio"
+                android:onClick="irTelaPrincipalUsuario"
                 android:text="@string/btn_entrar"
                 android:textColor="@color/white" />
 

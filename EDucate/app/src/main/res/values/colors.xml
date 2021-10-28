@@ -12,5 +12,6 @@
     <color name="cinza_titulo">#EEEEEE</color>
     <color name="cinza_botao_desativado">#EDB6B3B3</color>
     <color name="cinza_tom_escuro">#707070</color>
+    <color name="azul_claro">#3FBAFF</color>
 
 </resources>

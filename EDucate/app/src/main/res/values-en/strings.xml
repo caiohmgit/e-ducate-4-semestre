@@ -124,7 +124,20 @@
     <string name="cadastro">Register</string>
     <string name="frase_cadastro">Create your account with us!</string>
     <string name="recuperar_senha">Recover Password</string>
-    <string name="frase_recuperar_senha">" Enter the email you used to register so we can send you a request to reset your password"</string>
+    <string name="frase_recuperar_senha">Enter the email you used to register so we can send you a request to reset your password</string>
     <string name="email_cadastrado">Registered E-mail</string>
     <string name="btn_cancelar">Cancel</string>
+    <string name="busca_por_bibliotecas">Search for Libraries</string>
+    <string name="hint_pesquisa_biblio">Enter a name or location to search</string>
+    <string name="resultado_pesquisa">Result for search of \"XXXXXX\"</string>
+    <string name="btn_filtar">Filter</string>
+    <string name="titulo_tela_ajuda">Difficulty navigating the APP?</string>
+    <string name="mensagem_tela_contato">Don\'t worry, we\'ve prepared a quick guide to help you with all the features present in the app!</string>
+    <string name="orientacao_clicar_botao_ajuda">Cool huh?! Click on the Button below and download the Guide right now!</string>
+    <string name="btn_baixar_pdf">Download PDF</string>
+    <string name="bem_vindo">Welcome,</string>
+    <string name="primeiro_nome_usuario">Amanda</string>
+    <string name="bibliotecas_recomendadas">Recommended Libraries</string>
+    <string name="biblioteca_publica">Public Library</string>
+    <string name="numero_estrelas_biblio">4.8</string>
 </resources>
