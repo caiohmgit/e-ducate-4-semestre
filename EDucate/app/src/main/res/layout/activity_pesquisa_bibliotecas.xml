@@ -58,14 +58,26 @@
                 android:fontFamily="@font/exo2_regular"
                 android:hint="@string/hint_pesquisa_biblio"
                 android:paddingStart="12dp"
-                android:textSize="15sp"
-                android:drawableEnd="@drawable/ic_search"
                 android:paddingEnd="12dp"
+                android:textSize="15sp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="108dp"
+                android:src="@drawable/ic_search"
+                android:layout_marginLeft="355dp"
+                android:onClick=""
                 />
 
 
 
+
+
         </RelativeLayout>
+
 
 
         <ScrollView
@@ -79,285 +91,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:id="@+id/ll_resultado_busca_bibliotecas"
+                >
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/custom_search_biblio_item"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/foto_bandtec"
-                        app:shapeAppearanceOverlay="@style/image_seach_biblio_item" />
-
-                    <LinearLayout
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="15dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/exo2_bold"
-                            android:text="@string/nome_setado_biblio"
-                            android:textColor="#404040"
-                            android:textSize="15sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:drawableStart="@drawable/ic_location"
-                            android:drawablePadding="5dp"
-                            android:fontFamily="@font/exo2_regular"
-                            android:paddingVertical="5dp"
-                            android:text="@string/endereco_biblioteca" />
-
-
-                    </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/ic_favorite" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/custom_search_biblio_item"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/foto_bandtec"
-                        app:shapeAppearanceOverlay="@style/image_seach_biblio_item" />
-
-                    <LinearLayout
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="15dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/exo2_bold"
-                            android:text="@string/nome_setado_biblio"
-                            android:textColor="#404040"
-                            android:textSize="15sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:drawableStart="@drawable/ic_location"
-                            android:drawablePadding="5dp"
-                            android:fontFamily="@font/exo2_regular"
-                            android:paddingVertical="5dp"
-                            android:text="@string/endereco_biblioteca" />
-
-
-                    </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/ic_favorite" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/custom_search_biblio_item"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/foto_bandtec"
-                        app:shapeAppearanceOverlay="@style/image_seach_biblio_item" />
-
-                    <LinearLayout
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="15dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/exo2_bold"
-                            android:text="@string/nome_setado_biblio"
-                            android:textColor="#404040"
-                            android:textSize="15sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:drawableStart="@drawable/ic_location"
-                            android:drawablePadding="5dp"
-                            android:fontFamily="@font/exo2_regular"
-                            android:paddingVertical="5dp"
-                            android:text="@string/endereco_biblioteca" />
-
-
-                    </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/ic_favorite" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/custom_search_biblio_item"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/foto_bandtec"
-                        app:shapeAppearanceOverlay="@style/image_seach_biblio_item" />
-
-                    <LinearLayout
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="15dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/exo2_bold"
-                            android:text="@string/nome_setado_biblio"
-                            android:textColor="#404040"
-                            android:textSize="15sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:drawableStart="@drawable/ic_location"
-                            android:drawablePadding="5dp"
-                            android:fontFamily="@font/exo2_regular"
-                            android:paddingVertical="5dp"
-                            android:text="@string/endereco_biblioteca" />
-
-
-                    </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/ic_favorite" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/custom_search_biblio_item"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/foto_bandtec"
-                        app:shapeAppearanceOverlay="@style/image_seach_biblio_item" />
-
-                    <LinearLayout
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="15dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/exo2_bold"
-                            android:text="@string/nome_setado_biblio"
-                            android:textColor="#404040"
-                            android:textSize="15sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:drawableStart="@drawable/ic_location"
-                            android:drawablePadding="5dp"
-                            android:fontFamily="@font/exo2_regular"
-                            android:paddingVertical="5dp"
-                            android:text="@string/endereco_biblioteca" />
-
-
-                    </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/ic_favorite" />
-
-
-                </LinearLayout>
 
 
             </LinearLayout>
+
+
 
 
         </ScrollView>

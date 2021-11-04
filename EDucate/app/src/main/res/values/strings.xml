@@ -186,6 +186,8 @@
     <string name="bibliotecas_recomendadas">Bibliotecas Recomendadas</string>
     <string name="biblioteca_publica">Biblioteca Pública</string>
     <string name="numero_estrelas_biblio">4.8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

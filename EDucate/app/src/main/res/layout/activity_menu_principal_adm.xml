@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipalADM">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="411dp"
+        android:layout_height="222dp"
+        android:background="@drawable/custom_header_add_livros"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/exo2_bold"
+            android:text="@string/bem_vindo"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/exo2_bold"
+            android:text="@string/primeiro_nome_usuario"
+            android:textAllCaps="true"
+            android:textColor="#FFCDB8"
+            android:textSize="23sp" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/ic_circle_white" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_menubar" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
