@@ -1,14 +1,11 @@
 package com.example.e_ducate
 
-import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.Toast
-import com.squareup.picasso.Picasso
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -38,7 +35,7 @@ class PesquisaBibliotecas : AppCompatActivity() {
                         params.putSerializable("biblioteca", it)
 
 
-                        val fragment = BibliotecaFragment()
+                        val fragment = BibliotecaPesquisaFragment()
 
                         fragment.arguments = params
                         transaction.add(R.id.ll_resultado_busca_bibliotecas, fragment)
@@ -57,30 +54,7 @@ class PesquisaBibliotecas : AppCompatActivity() {
         })
 
 
-//        val dados = listOf(
-//            mapOf(Pair("N","Biblioteca da BandTec"), Pair("E","Rua Haddock Lobo")),
-//            mapOf(Pair("N","Biblioteca da afads"), Pair("E","Rua Haddock vsdfsdfe")),
-//            mapOf(Pair("N","Biblioteca da BanasdasdTec"), Pair("E","Rua Haddock gsdfsf")),
-//            mapOf(Pair("N","Biblioteca da BandTasdaec"), Pair("E","Rua Haddock sdfsdf")),
-//            mapOf(Pair("N","Biblioteca da asdasda"), Pair("E","Rua Haddock sdfAD")),
-//            mapOf(Pair("N","Biblioteca da fgsdfsf"), Pair("E","Rua Haddock sagdgs"))
-//        )
 
-
-
-
-
-//        dados.forEach {
-//            val params = Bundle()
-//            params.putString("nome", it["N"])
-//            params.putString("endereco", it["E"])
-//
-//            val fragment = BibliotecaFragment()
-//
-//            fragment.arguments = params
-//            transaction.add(R.id.ll_resultado_busca_bibliotecas, fragment)
-//
-//        }
 
 
 

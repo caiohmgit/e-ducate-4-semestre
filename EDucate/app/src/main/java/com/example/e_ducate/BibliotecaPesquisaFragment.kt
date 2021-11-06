@@ -7,11 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import com.google.android.material.imageview.ShapeableImageView
 import com.squareup.picasso.Picasso
 
 
-class BibliotecaFragment : Fragment() {
+class BibliotecaPesquisaFragment : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +23,7 @@ class BibliotecaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_biblioteca, container, false)
+        return inflater.inflate(R.layout.fragment_biblioteca_pesquisa, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -37,8 +36,14 @@ class BibliotecaFragment : Fragment() {
 
 
         nomeBiblioteca.text = biblioteca.nome
-        enderecoBiblioteca.text = biblioteca.endereco
-        Picasso.with(view.context).load(biblioteca.urlImage.replace("http", "https")).into(imgBiblioteca);
+        enderecoBiblioteca.text = biblioteca.localizacao.nomeRua
+
+        if (biblioteca.urlBiblio != null) {
+            Picasso.with(view.context).load(biblioteca.urlBiblio?.replace("http", "https")).into(imgBiblioteca);
+        } else {
+            Picasso.with(view.context).load("https://www.colunaitalo.com.br/upload/noticias/2243/capa_destaque_2_view.jpg").into(imgBiblioteca);
+        }
+
     }
 
 

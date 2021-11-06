@@ -69,7 +69,6 @@
                 android:layout_marginTop="108dp"
                 android:src="@drawable/ic_search"
                 android:layout_marginLeft="355dp"
-                android:onClick=""
                 />
 
 
@@ -89,10 +88,10 @@
             >
 
             <LinearLayout
+                android:id="@+id/ll_resultado_busca_bibliotecas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:id="@+id/ll_resultado_busca_bibliotecas"
                 >
 
 

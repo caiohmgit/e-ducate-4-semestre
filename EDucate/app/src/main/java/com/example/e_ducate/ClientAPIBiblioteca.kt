@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface ClientAPIBiblioteca {
 
-    @GET("/bibliotecas")
+    @GET("/biblio/bibliotecas")
     fun getBibliotecas(): Call<List<Biblioteca>>
 }
