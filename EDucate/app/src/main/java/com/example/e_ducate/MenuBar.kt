@@ -44,7 +44,8 @@ class MenuBar : AppCompatActivity() {
                 R.id.nav_home,
                 R.id.nav_profile,
                 R.id.nav_contact,
-                R.id.nav_help
+                R.id.nav_help,
+                R.id.nav_torne_adm
 
             ), drawerLayout
         )

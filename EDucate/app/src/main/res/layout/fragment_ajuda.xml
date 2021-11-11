@@ -22,21 +22,20 @@
 
 
 
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="325dp"
-            android:layout_marginTop="38dp"
-            android:src="@drawable/ic_circle_dark_grey" />
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="35dp"
+        <Button
+            android:id="@+id/btn_fechar_ajuda"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/botao_fechar_preto"
+            android:text="@string/botao_fechar"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:layout_marginLeft="335dp"
             android:layout_marginTop="50dp"
-            android:src="@drawable/ic_close"
-
-            />
+            tools:ignore="MissingConstraints" />
 
 
         <LinearLayout
@@ -83,6 +82,7 @@
 
 
             <Button
+                android:id="@+id/btn_ajuda"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginLeft="20dp"
@@ -94,7 +94,7 @@
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="30dp"
+                android:textSize="30sp"
 
                 />
 

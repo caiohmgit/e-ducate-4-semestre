@@ -39,7 +39,11 @@ class BibliotecaPesquisaFragment : Fragment() {
         enderecoBiblioteca.text = biblioteca.localizacao.nomeRua
 
         if (biblioteca.urlBiblio != null) {
-            Picasso.with(view.context).load(biblioteca.urlBiblio?.replace("http", "https")).into(imgBiblioteca);
+            if (biblioteca.urlBiblio.contains("https")) {
+                Picasso.with(view.context).load(biblioteca.urlBiblio).into(imgBiblioteca)
+            } else {
+                Picasso.with(view.context).load(biblioteca.urlBiblio?.replace("http", "https")).into(imgBiblioteca);
+            }
         } else {
             Picasso.with(view.context).load("https://www.colunaitalo.com.br/upload/noticias/2243/capa_destaque_2_view.jpg").into(imgBiblioteca);
         }

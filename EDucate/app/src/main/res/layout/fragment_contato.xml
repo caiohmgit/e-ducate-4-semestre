@@ -23,22 +23,19 @@
             />
 
 
-
-
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_fechar_contato"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/botao_fechar_vermelho"
-            android:text="@string/botao_fechar"
-            android:onClick="fechar"
-            android:layout_marginRight="20dp"
-            android:fontFamily="sans-serif"
-            android:textColor="#70FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_marginLeft="335dp"
             android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/botao_fechar_vermelho"
+            android:fontFamily="sans-serif"
+            android:text="@string/botao_fechar"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
             tools:ignore="MissingConstraints" />
 
 
@@ -186,8 +183,7 @@
                     android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="30dp"
-                    android:onClick="irTelaHomeUsuario"
+                    android:textSize="30sp"
 
                     />
 

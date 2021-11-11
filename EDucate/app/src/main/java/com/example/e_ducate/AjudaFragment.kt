@@ -5,8 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentContainer
+import androidx.navigation.fragment.findNavController
 import com.example.e_ducate.databinding.FragmentAjudaBinding
 import com.example.e_ducate.databinding.FragmentContatoBinding
+import android.widget.Button
 
 
 class AjudaFragment : Fragment() {
@@ -29,6 +32,12 @@ class AjudaFragment : Fragment() {
         val root: View = binding.root
 
 
+        val button: Button = root.findViewById(R.id.btn_fechar_ajuda)
+        button.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.nav_home)
+        })
+
+
         return root
 
     }
@@ -37,5 +46,9 @@ class AjudaFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+
+
+
 
 }

@@ -214,4 +214,23 @@
     <string name="exemplo_de_url">Ex. https://imagem-da-biblioteca.com</string>
 
 
+    <string name="avaliacao">Avaliação</string>
+    <string name="nota_biblioteca">4.7</string>
+    <string name="deixe_sua_avaliacao">Deixe sua Avaliação!</string>
+    <string name="btn_visitar_biblioteca">Visitar Biblioteca</string>
+    <string name="btn_ver_livros">Livros em Destaque</string>
+
+
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="url_imagem_perfil">URL da imagem de Perfil</string>
+    <string name="ex_url_imagem_perfil">https://imagem-de-perfil.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="avalie">Avalie!</string>
+    <string name="descricao_tela_avaliacao_biblioteca">Sua avaliação ajuda novas pessoas a conhecer melhor a biblioteca, assim como uma nova oportunidade de melhoria para uma futura melhor experiência!</string>
+    <string name="hint_comentario_avaliacao">Deixe um comentário (Opcional)</string>
+    <string name="btn_avaliar">Avaliar</string>
+
+
 </resources>

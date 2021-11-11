@@ -5,24 +5,47 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
+import com.example.e_ducate.databinding.FragmentAjudaBinding
+import com.example.e_ducate.databinding.FragmentVisualizacaoMainBibliotecaBinding
 import com.squareup.picasso.Picasso
 
 
-class BibliotecaRecomendadaFragment : Fragment() {
+class VisualizacaoMainBibliotecaFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    private var _binding: FragmentVisualizacaoMainBibliotecaBinding? = null
 
-    }
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
+
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_biblioteca_recomendada, container, false)
+
+        _binding = FragmentVisualizacaoMainBibliotecaBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+
+        val buttonFechar: Button = root.findViewById(R.id.btn_fechar_perfil)
+        buttonFechar.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.nav_home)
+        })
+
+        val buttonAvaliar: Button = root.findViewById(R.id.btn_fechar_perfil)
+        buttonFechar.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.nav_home)
+        })
+
+
+
+        return root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -30,6 +53,7 @@ class BibliotecaRecomendadaFragment : Fragment() {
         val biblioteca:Biblioteca = arguments?.getSerializable("biblioteca") as Biblioteca
 
         val nomeBiblioteca: TextView = view.findViewById(R.id.nome_biblioteca)
+        val descricaoBiblioteca: TextView = view.findViewById(R.id.desc_biblioteca)
         val enderecoBiblioteca: TextView = view.findViewById(R.id.endereco_biblioteca)
         val notaBiblioteca: TextView = view.findViewById(R.id.nota_biblioteca)
         val horarioFuncBiblioteca: TextView = view.findViewById(R.id.horario_func_biblioteca)
@@ -38,6 +62,7 @@ class BibliotecaRecomendadaFragment : Fragment() {
 
 
         nomeBiblioteca.text = biblioteca.nome
+        descricaoBiblioteca.text = biblioteca.descricao
         enderecoBiblioteca.text = biblioteca.localizacao.nomeRua
 
         if (biblioteca.nota != null) {

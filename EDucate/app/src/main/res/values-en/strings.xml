@@ -165,4 +165,11 @@
     <string name="descricao_biblio">Library Description</string>
     <string name="adicione_uma_url">Add an image URL to showcase your Library</string>
     <string name="exemplo_de_url">Ex. https://library-image.com</string>
+    <string name="avaliacao">Rating</string>
+    <string name="nota_biblioteca">4.7</string>
+    <string name="deixe_sua_avaliacao">Give your Rating!</string>
+    <string name="btn_visitar_biblioteca">Visit Library</string>
+    <string name="btn_ver_livros">Featured Books</string>
+    <string name="sim">Yes</string>
+    <string name="nao">No</string>
 </resources>
