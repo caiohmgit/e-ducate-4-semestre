@@ -186,8 +186,6 @@
     <string name="bibliotecas_recomendadas">Bibliotecas Recomendadas</string>
     <string name="biblioteca_publica">Biblioteca Pública</string>
     <string name="numero_estrelas_biblio">4.8</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_menu_bar">MenuBar</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -206,11 +204,14 @@
     <string name="menubar_configuracoes">CONFIGURAÇÕES</string>
     <string name="menubar_titulo">Menu</string>
     <string name="torne_se_adm">TORNE-SE UM ADMINISTRADOR</string>
-    <string name="logout">LOGOUT</string>
+    <string name="logout">SAIR</string>
     <string name="explorar">EXPLORAR</string>
     <string name="gostaria_de_administrar">RESPONSÁVEL POR ALGUMA BIBLIOTECA?</string>
     <string name="menu_home">Home</string>
     <string name="menubar_home">HOME</string>
+    <string name="descricao_biblio">Descrição da Biblioteca</string>
+    <string name="adicione_uma_url">Adicione uma URL de imagem para apresentar sua Biblioteca</string>
+    <string name="exemplo_de_url">Ex. https://imagem-da-biblioteca.com</string>
 
 
 </resources>

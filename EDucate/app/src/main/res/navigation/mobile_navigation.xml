@@ -10,11 +10,24 @@
         android:label="@string/menu_home"
         android:name="com.example.e_ducate.ui.home.HomeFragment"
         tools:layout="@layout/fragment_home" />
+
     <fragment
         android:id="@+id/nav_contact"
         android:name="com.example.e_ducate.ContatoFragment"
         android:label="fragment_contato"
         tools:layout="@layout/fragment_contato" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.example.e_ducate.AjudaFragment"
+        android:label="fragment_ajuda"
+        tools:layout="@layout/fragment_ajuda" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.e_ducate.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
 
 
 </navigation>

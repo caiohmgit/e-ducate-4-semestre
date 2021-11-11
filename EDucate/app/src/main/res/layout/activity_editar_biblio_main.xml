@@ -80,27 +80,27 @@
                 app:shapeAppearanceOverlay="@style/image_exibicao_biblio" />
 
 
-            <View
-                android:layout_width="220dp"
-                android:layout_height="200dp"
-                android:layout_marginLeft="95dp"
-                android:layout_marginTop="140dp"
-                android:layout_marginRight="95dp"
-                android:background="@drawable/custom_foreground_image_shape" />
+<!--            <View-->
+<!--                android:layout_width="220dp"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_marginLeft="95dp"-->
+<!--                android:layout_marginTop="140dp"-->
+<!--                android:layout_marginRight="95dp"-->
+<!--                android:background="@drawable/custom_foreground_image_shape" />-->
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="205dp"
-                android:layout_marginRight="115dp"
-                android:background="@drawable/custom_button_alterar_foto"
-                android:fontFamily="@font/exo2_regular"
-                android:padding="5dp"
-                android:text="@string/btn_editar_foto_biblio"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="19.5sp" />
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="115dp"-->
+<!--                android:layout_marginTop="205dp"-->
+<!--                android:layout_marginRight="115dp"-->
+<!--                android:background="@drawable/custom_button_alterar_foto"-->
+<!--                android:fontFamily="@font/exo2_regular"-->
+<!--                android:padding="5dp"-->
+<!--                android:text="@string/btn_editar_foto_biblio"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="19.5sp" />-->
 
 
         </RelativeLayout>

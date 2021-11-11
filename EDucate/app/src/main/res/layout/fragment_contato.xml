@@ -187,7 +187,7 @@
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="30dp"
-                    android:onClick="fechar"
+                    android:onClick="irTelaHomeUsuario"
 
                     />
 

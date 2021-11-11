@@ -13,6 +13,12 @@
         android:theme="@style/Theme.EDucate"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".EditarBiblioVisualizacao"
+            android:exported="true" />
+        <activity
+            android:name=".EditarBiblioPalavrasChaves"
+            android:exported="true" />
+        <activity
             android:name=".MenuBar"
             android:exported="true"
             android:label="@string/title_activity_menu_bar"

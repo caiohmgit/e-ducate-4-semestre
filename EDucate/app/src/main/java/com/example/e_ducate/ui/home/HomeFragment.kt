@@ -69,8 +69,8 @@ class HomeFragment : Fragment() {
             }
 
             override fun onFailure(call: Call<List<Biblioteca>>, t: Throwable) {
-                Log.e("API Biblioteca", t.message!!)
-                Toast.makeText(context, "Erro na chamada da API", Toast.LENGTH_SHORT).show()
+//                Log.e("API Biblioteca", t.message!!)
+//                Toast.makeText(context, "Erro na chamada da API", Toast.LENGTH_SHORT).show()
             }
 
         })

@@ -92,17 +92,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/cep_setado_biblio"
-                android:textColor="#707070"
                 android:fontFamily="@font/exo2_medium"
                 android:hint="@string/exemplo_cep"
+                android:text="@string/cep_setado_biblio"
+                android:textColor="#707070"
                 android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginTop="15dp"
+                android:orientation="horizontal"
 
                 >
 
@@ -116,52 +116,49 @@
                         android:layout_width="265dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
+                        android:fontFamily="@font/exo2_bold"
                         android:text="@string/logradouro"
                         android:textColor="@color/cinza_padrao"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/exo2_bold"
-                        />
+                        android:textSize="16sp" />
 
                     <EditText
                         android:layout_width="265dp"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo2_medium"
+                        android:hint="@string/exemplo_logradouro"
                         android:text="@string/logradouro_setado_biblio"
                         android:textColor="#707070"
-                        android:hint="@string/exemplo_logradouro"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/exo2_medium"
-                        />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginLeft="5dp">
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
+                        android:fontFamily="@font/exo2_bold"
                         android:text="@string/numero_biblioteca"
+                        android:textAlignment="textEnd"
                         android:textColor="@color/cinza_padrao"
                         android:textSize="16sp"
-                        android:textAlignment="textEnd"
-                        android:fontFamily="@font/exo2_bold"
 
                         />
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo2_medium"
                         android:hint="@string/exemplo_numero_biblioteca"
                         android:text="@string/numero_setado_biblio"
-                        android:textColor="#707070"
-                        android:textSize="16sp"
                         android:textAlignment="textEnd"
-                        android:fontFamily="@font/exo2_medium"
-                        />
+                        android:textColor="#707070"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -170,8 +167,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginTop="25dp"
+                android:orientation="horizontal"
 
                 >
 
@@ -183,26 +180,23 @@
                     >
 
 
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:fontFamily="@font/exo2_bold"
                         android:text="@string/bairro"
                         android:textColor="@color/cinza_padrao"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/exo2_bold"
-                        />
+                        android:textSize="16sp" />
 
                     <EditText
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo2_medium"
                         android:hint="@string/exemplo_bairro"
-                        android:textSize="16sp"
                         android:text="@string/bairro_setado_biblio"
                         android:textColor="#707070"
-                        android:fontFamily="@font/exo2_medium"
-                        />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -210,9 +204,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
+                    android:orientation="vertical">
 
 
                     <TextView
@@ -220,57 +212,52 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
+                        android:fontFamily="@font/exo2_bold"
                         android:text="@string/cidade"
                         android:textColor="@color/cinza_padrao"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/exo2_bold"
-                        />
+                        android:textSize="16sp" />
 
                     <EditText
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/cidade_setado_biblio"
-                        android:textColor="#707070"
-                        android:hint="@string/exemplo_cidade"
-                        android:textSize="16sp"
                         android:layout_marginLeft="10dp"
                         android:fontFamily="@font/exo2_medium"
-                        />
+                        android:hint="@string/exemplo_cidade"
+                        android:text="@string/cidade_setado_biblio"
+                        android:textColor="#707070"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginRight="30dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/exo2_bold"
                         android:text="@string/estado_biblioteca"
+                        android:textAlignment="textStart"
                         android:textColor="@color/cinza_padrao"
                         android:textSize="16sp"
-                        android:textAlignment="textStart"
-                        android:fontFamily="@font/exo2_bold"
 
                         />
 
                     <EditText
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:hint="@string/exemplo_estado"
                         android:layout_marginLeft="10dp"
-                        android:textSize="16sp"
-                        android:text="@string/estado_setado_biblio"
-                        android:textColor="#707070"
-                        android:textAlignment="textStart"
                         android:fontFamily="@font/exo2_medium"
-                        />
-
+                        android:hint="@string/exemplo_estado"
+                        android:text="@string/estado_setado_biblio"
+                        android:textAlignment="textStart"
+                        android:textColor="#707070"
+                        android:textSize="16sp" />
 
 
                 </LinearLayout>
@@ -279,27 +266,24 @@
             </LinearLayout>
 
 
-
-
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:gravity="center_horizontal"
                 android:layout_marginLeft="60dp"
-                android:layout_marginRight="60dp"
                 android:layout_marginTop="70dp"
-                android:textSize="14sp"
-                android:paddingEnd="8dp"
-                android:paddingVertical="10dp"
-                android:paddingStart="20dp"
-                android:text="@string/btn_atualizar"
-                android:textColor="#FFFFFF"
-                android:fontFamily="@font/exo2_bold"
+                android:layout_marginRight="60dp"
                 android:background="@drawable/custom_orange_defaut_button"
                 android:drawableEnd="@drawable/ic_check"
                 android:drawablePadding="12dp"
+                android:fontFamily="@font/exo2_bold"
+                android:gravity="center_horizontal"
                 android:onClick="fechar"
-                />
+                android:paddingVertical="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="8dp"
+                android:text="@string/btn_atualizar"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
 
         </LinearLayout>
 
