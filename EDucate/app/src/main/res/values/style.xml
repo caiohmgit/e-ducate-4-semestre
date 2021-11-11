@@ -45,4 +45,8 @@
 
     </style>
 
+    <style name="Theme.TesteMenuBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TesteMenuBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

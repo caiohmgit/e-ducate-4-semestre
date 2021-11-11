@@ -21,7 +21,7 @@ class Login : AppCompatActivity() {
     }
 
     fun irTelaPrincipalUsuario(v: View){
-        startActivity(Intent(this, MenuPrincipalUsuario::class.java))
+        startActivity(Intent(this, MenuBar::class.java))
     }
 
     fun fechar(v: View){
