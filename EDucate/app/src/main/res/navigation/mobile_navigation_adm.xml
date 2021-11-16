@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_adm"
+    app:startDestination="@+id/nav_home_adm">
+
+    <fragment
+        android:id="@+id/nav_home_adm"
+        android:name="com.example.e_ducate.HomeAdm"
+        android:label="HomeAdm"
+        tools:layout="@layout/fragment_home_adm" />
+
+
+    <fragment
+        android:id="@+id/nav_contact_adm"
+        android:name="com.example.e_ducate.ContatoFragment"
+        android:label="fragment_contato"
+        tools:layout="@layout/fragment_contato" />
+
+    <fragment
+        android:id="@+id/nav_help_adm"
+        android:name="com.example.e_ducate.AjudaFragment"
+        android:label="fragment_ajuda"
+        tools:layout="@layout/fragment_ajuda" />
+
+    <fragment
+        android:id="@+id/nav_profile_adm"
+        android:name="com.example.e_ducate.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/editarPerfilFragment"
+        android:name="com.example.e_ducate.EditarPerfilFragment"
+        android:label="fragment_editar_perfil"
+        tools:layout="@layout/fragment_editar_perfil" />
+    <fragment
+        android:id="@+id/library_visualization_adm"
+        android:name="com.example.e_ducate.VisualizacaoMainBibliotecaFragment"
+        android:label="fragment_visualizacao_main_biblioteca"
+        tools:layout="@layout/fragment_visualizacao_main_biblioteca" />
+
+
+
+</navigation>

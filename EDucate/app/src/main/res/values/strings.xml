@@ -229,7 +229,6 @@
     <string name="btn_avaliar">Avaliar</string>
 
 
-
     <string name="dados_pessoais">Dados Pessoais</string>
     <string name="se_atente_ao_que_pede">Se atente ao que pede e preencha adequadamente os campos.</string>
     <string name="nome_completo">Nome Completo</string>
@@ -247,6 +246,12 @@
     <string name="telefone_biblioteca">Telefone</string>
     <string name="exemplo_telefone_biblioteca">ex. (11) 22222-3333</string>
     <string name="dados_da_biblioteca">Dados da Biblioteca</string>
+    <string name="title_activity_menu_bar_adm">MenuBarADM</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="minha_biblioteca">Minha Biblioteca</string>
 
 
 </resources>
