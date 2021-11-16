@@ -32,9 +32,14 @@ class AjudaFragment : Fragment() {
         val root: View = binding.root
 
 
-        val button: Button = root.findViewById(R.id.btn_fechar_ajuda)
-        button.setOnClickListener(View.OnClickListener {
+        val buttonFechar: Button = root.findViewById(R.id.btn_fechar_ajuda)
+        buttonFechar.setOnClickListener(View.OnClickListener {
             findNavController().navigate(R.id.nav_home)
+        })
+
+        val buttonAjuda: Button = root.findViewById(R.id.btn_ajuda)
+        buttonAjuda.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.library_visualization)
         })
 
 

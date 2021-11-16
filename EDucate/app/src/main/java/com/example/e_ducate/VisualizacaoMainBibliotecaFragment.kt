@@ -33,14 +33,14 @@ class VisualizacaoMainBibliotecaFragment : Fragment() {
         val root: View = binding.root
 
 
-        val buttonFechar: Button = root.findViewById(R.id.btn_fechar_perfil)
+        val buttonFechar: Button = root.findViewById(R.id.btn_fechar_tela_biblioteca)
         buttonFechar.setOnClickListener(View.OnClickListener {
             findNavController().navigate(R.id.nav_home)
         })
 
-        val buttonAvaliar: Button = root.findViewById(R.id.btn_fechar_perfil)
-        buttonFechar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.nav_home)
+        val buttonAvaliar: Button = root.findViewById(R.id.btn_avaliar_biblioteca)
+        buttonAvaliar.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.avaliar_biblioteca)
         })
 
 
@@ -48,48 +48,48 @@ class VisualizacaoMainBibliotecaFragment : Fragment() {
         return root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        val biblioteca:Biblioteca = arguments?.getSerializable("biblioteca") as Biblioteca
-
-        val nomeBiblioteca: TextView = view.findViewById(R.id.nome_biblioteca)
-        val descricaoBiblioteca: TextView = view.findViewById(R.id.desc_biblioteca)
-        val enderecoBiblioteca: TextView = view.findViewById(R.id.endereco_biblioteca)
-        val notaBiblioteca: TextView = view.findViewById(R.id.nota_biblioteca)
-        val horarioFuncBiblioteca: TextView = view.findViewById(R.id.horario_func_biblioteca)
-        val homeOfficeBiblioteca: TextView = view.findViewById(R.id.home_office_biblioteca)
-        val imgBiblioteca: ImageView = view.findViewById(R.id.img_biblioteca)
-
-
-        nomeBiblioteca.text = biblioteca.nome
-        descricaoBiblioteca.text = biblioteca.descricao
-        enderecoBiblioteca.text = biblioteca.localizacao.nomeRua
-
-        if (biblioteca.nota != null) {
-            notaBiblioteca.text = biblioteca.nota.toString()
-        } else {
-            notaBiblioteca.text = "---"
-        }
-
-        if (biblioteca.urlBiblio != null) {
-            if (biblioteca.urlBiblio.contains("https")) {
-                Picasso.with(view.context).load(biblioteca.urlBiblio).into(imgBiblioteca)
-            } else {
-                Picasso.with(view.context).load(biblioteca.urlBiblio?.replace("http", "https")).into(imgBiblioteca);
-            }
-        } else {
-            Picasso.with(view.context).load("https://www.colunaitalo.com.br/upload/noticias/2243/capa_destaque_2_view.jpg").into(imgBiblioteca);
-        }
-
-        if (biblioteca.homeOffice) {
-            homeOfficeBiblioteca.text = getString(R.string.sim)
-        } else {
-            homeOfficeBiblioteca.text = getString(R.string.nao)
-        }
-
-        horarioFuncBiblioteca.text = biblioteca.horarioFunc
-
-    }
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+//        val biblioteca:Biblioteca = arguments?.getSerializable("biblioteca") as Biblioteca
+//
+//        val nomeBiblioteca: TextView = view.findViewById(R.id.nome_biblioteca)
+//        val descricaoBiblioteca: TextView = view.findViewById(R.id.desc_biblioteca)
+//        val enderecoBiblioteca: TextView = view.findViewById(R.id.endereco_biblioteca)
+//        val notaBiblioteca: TextView = view.findViewById(R.id.nota_biblioteca)
+//        val horarioFuncBiblioteca: TextView = view.findViewById(R.id.horario_func_biblioteca)
+//        val homeOfficeBiblioteca: TextView = view.findViewById(R.id.home_office_biblioteca)
+//        val imgBiblioteca: ImageView = view.findViewById(R.id.img_biblioteca)
+//
+//
+//        nomeBiblioteca.text = biblioteca.nome
+//        descricaoBiblioteca.text = biblioteca.descricao
+//        enderecoBiblioteca.text = biblioteca.localizacao.nomeRua
+//
+//        if (biblioteca.nota != null) {
+//            notaBiblioteca.text = biblioteca.nota.toString()
+//        } else {
+//            notaBiblioteca.text = "---"
+//        }
+//
+//        if (biblioteca.urlBiblio != null) {
+//            if (biblioteca.urlBiblio.contains("https")) {
+//                Picasso.with(view.context).load(biblioteca.urlBiblio).into(imgBiblioteca)
+//            } else {
+//                Picasso.with(view.context).load(biblioteca.urlBiblio?.replace("http", "https")).into(imgBiblioteca);
+//            }
+//        } else {
+//            Picasso.with(view.context).load("https://www.colunaitalo.com.br/upload/noticias/2243/capa_destaque_2_view.jpg").into(imgBiblioteca);
+//        }
+//
+//        if (biblioteca.homeOffice) {
+//            homeOfficeBiblioteca.text = getString(R.string.sim)
+//        } else {
+//            homeOfficeBiblioteca.text = getString(R.string.nao)
+//        }
+//
+//        horarioFuncBiblioteca.text = biblioteca.horarioFunc
+//
+//    }
 
 
 }

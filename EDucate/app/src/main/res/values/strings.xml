@@ -112,8 +112,6 @@
     <string name="adicione_uma_descricao">Adicione uma Descrição à sua Biblioteca:</string>
     <string name="descreva_rapidamente_desc">Descreva brevemente sua biblioteca, citando suas qualidades e o que ela tem a oferecer...</string>
     <string name="adicione_uma_foto">Adicione uma foto da sua Biblioteca</string>
-    <string name="dados_pessoais">Dados Pessoais</string>
-    <string name="se_atente_ao_que_pede">Atente-se ao que pede e preencha adequadamente os campos.</string>
     <string name="terceiro_passo">Terceiro Passo:</string>
     <string name="palavras_chaves">Palavras chaves</string>
     <string name="selecione_oito_palavras">Selecione até 8 palavras:</string>
@@ -225,12 +223,30 @@
     <string name="nao">Não</string>
     <string name="url_imagem_perfil">URL da imagem de Perfil</string>
     <string name="ex_url_imagem_perfil">https://imagem-de-perfil.com</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="avalie">Avalie!</string>
     <string name="descricao_tela_avaliacao_biblioteca">Sua avaliação ajuda novas pessoas a conhecer melhor a biblioteca, assim como uma nova oportunidade de melhoria para uma futura melhor experiência!</string>
     <string name="hint_comentario_avaliacao">Deixe um comentário (Opcional)</string>
     <string name="btn_avaliar">Avaliar</string>
+
+
+
+    <string name="dados_pessoais">Dados Pessoais</string>
+    <string name="se_atente_ao_que_pede">Se atente ao que pede e preencha adequadamente os campos.</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="exemplo_nome_completo">ex. José da Silva</string>
+    <string name="exemplo_cpf">ex. 123.456.789-10</string>
+    <string name="email">E-mail</string>
+    <string name="cpf">CPF</string>
+    <string name="exemplo_email">ex. exemplo@dominio.com</string>
+    <string name="rg">RG</string>
+    <string name="exemplo_rg">ex. 12.345.678-9</string>
+    <string name="exemplo_nome_biblioteca">ex. Biblioteca São Sebastião</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="exemplo_cnpj">ex. xx.xxx.xxx/000x-xx</string>
+    <string name="exemplo_endereco_biblioteca">ex. Rua Adamastor, 90 - Paulista</string>
+    <string name="telefone_biblioteca">Telefone</string>
+    <string name="exemplo_telefone_biblioteca">ex. (11) 22222-3333</string>
+    <string name="dados_da_biblioteca">Dados da Biblioteca</string>
 
 
 </resources>

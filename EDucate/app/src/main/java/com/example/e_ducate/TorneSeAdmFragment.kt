@@ -30,8 +30,8 @@ class TorneSeAdmFragment : Fragment() {
         val root: View = binding.root
 
 
-        val button: Button = root.findViewById(R.id.btn_fechar_ajuda)
-        button.setOnClickListener(View.OnClickListener {
+        val buttonCancelar: Button = root.findViewById(R.id.btn_cancelar)
+        buttonCancelar.setOnClickListener(View.OnClickListener {
             findNavController().navigate(R.id.nav_home)
         })
 
