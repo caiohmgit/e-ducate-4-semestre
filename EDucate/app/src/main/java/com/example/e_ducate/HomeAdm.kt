@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.LinearLayout
+import androidx.navigation.fragment.findNavController
 import com.example.e_ducate.databinding.FragmentHomeAdmBinding
 import com.example.e_ducate.databinding.FragmentHomeBinding
 import retrofit2.Call
@@ -27,6 +29,13 @@ class HomeAdm : Fragment() {
 
         _binding = FragmentHomeAdmBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val buttonExplorar: Button = root.findViewById(R.id.btn_explorar)
+        buttonExplorar.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.library_visualization_adm)
+        })
+
+
 
 
         return root

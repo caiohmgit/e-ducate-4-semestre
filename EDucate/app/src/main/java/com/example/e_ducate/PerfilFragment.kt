@@ -40,7 +40,7 @@ class PerfilFragment : Fragment() {
 
         val buttonIrTelaEditar: Button = root.findViewById(R.id.btn_editar_informacoes)
         buttonIrTelaEditar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.editarPerfilFragment)
+            findNavController().navigate(R.id.nav_profile)
         })
 
 

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarBiblioVisualizacaoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/imgbiblio"
+                android:scaleType="fitXY"
+                shapeAppearanceOverlay="@style/image_header_edit_biblio"
+                android:adjustViewBounds="true"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@drawable/custom_insufilm_editar_biblio"
+
+                />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="240dp"
+                android:fontFamily="@font/exo2_medium"
+                android:letterSpacing=".08"
+                android:paddingLeft="20dp"
+                android:paddingTop="55dp"
+                android:text="@string/editar_biblioteca"
+                android:textAllCaps="true"
+                android:textColor="#CCEEEEEE"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_fechar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="335dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/botao_fechar"
+                android:fontFamily="sans-serif"
+                android:text="@string/botao_fechar"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="260dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/btn_visualizacao"
+                android:textSize="27sp"
+                android:textColor="@color/laranja_padrao"
+                android:id="@+id/ultimo_passo"
+                android:fontFamily="@font/exo2_bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_marginTop="10dp">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subtitulo_desc_completa"
+                    android:text="@string/descricao_biblio"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/cinza_tom_escuro"
+                    android:fontFamily="@font/exo2_bold"/>
+
+                <EditText
+                    android:id="@+id/desc_biblioteca"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="@string/descreva_rapidamente_desc"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/exo2_medium"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/adicione_foto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adicione_uma_url"
+                    android:textColor="@color/cinza_tom_escuro"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/exo2_bold"/>
+
+                <EditText
+                    android:id="@+id/url_image_biblio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/exemplo_de_url"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_atualizar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="60dp"
+                    android:textSize="14sp"
+                    android:paddingEnd="8dp"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/btn_atualizar"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/exo2_bold"
+                    android:background="@drawable/custom_orange_defaut_button"
+                    android:drawableEnd="@drawable/ic_check"
+                    android:drawablePadding="12dp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

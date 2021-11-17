@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditarBiblioMainFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/imgbiblio"
+                android:scaleType="fitXY"
+                shapeAppearanceOverlay="@style/image_header_edit_biblio"
+                android:adjustViewBounds="true"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@drawable/custom_insufilm_editar_biblio"
+
+                />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="240dp"
+                android:fontFamily="@font/exo2_medium"
+                android:letterSpacing=".08"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp"
+                android:text="@string/editar_biblioteca"
+                android:textAllCaps="true"
+                android:textColor="#CCEEEEEE"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_fechar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="335dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/botao_fechar"
+                android:fontFamily="sans-serif"
+                android:text="@string/botao_fechar"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_biblioteca"
+                app:shapeAppearanceOverlay="@style/image_exibicao_biblio"
+                android:layout_width="220dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginRight="95dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/fotoexibicaobiblio" />
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            >
+
+
+            <Button
+                android:id="@+id/btn_informacoes_basicas"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:textSize="14sp"
+                android:paddingEnd="8dp"
+                android:paddingVertical="10dp"
+                android:paddingStart="30dp"
+                android:text="@string/btn_informacoes_basicas"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/exo2_bold"
+                android:background="@drawable/custom_orange_defaut_button"
+                android:drawableEnd="@drawable/ic_next"
+                android:drawablePadding="12dp"
+                />
+
+            <Button
+                android:id="@+id/btn_endereco"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:textSize="14sp"
+                android:layout_marginTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingVertical="10dp"
+                android:paddingStart="30dp"
+                android:text="@string/btn_endereco"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/exo2_bold"
+                android:background="@drawable/custom_orange_defaut_button"
+                android:drawableEnd="@drawable/ic_next"
+                android:drawablePadding="12dp"
+                />
+
+            <Button
+                android:id="@+id/btn_palavras_chaves"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:textSize="14sp"
+                android:layout_marginTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingVertical="10dp"
+                android:paddingStart="30dp"
+                android:text="@string/btn_palavras_chaves"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/exo2_bold"
+                android:background="@drawable/custom_orange_defaut_button"
+                android:drawableEnd="@drawable/ic_next"
+                android:drawablePadding="12dp"
+                />
+
+            <Button
+                android:id="@+id/btn_visualizacao"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:textSize="14sp"
+                android:layout_marginTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingVertical="10dp"
+                android:paddingStart="30dp"
+                android:text="@string/btn_visualizacao"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/exo2_bold"
+                android:background="@drawable/custom_orange_defaut_button"
+                android:drawableEnd="@drawable/ic_next"
+                android:drawablePadding="12dp"
+                />
+
+
+            <Button
+                android:id="@+id/btn_voltar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:textSize="14sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingEnd="5dp"
+                android:paddingVertical="10dp"
+                android:paddingStart="30dp"
+                android:text="@string/btn_voltar"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/exo2_bold"
+                android:background="@drawable/custom_button_back"
+                android:drawableEnd="@drawable/ic_return"
+                android:drawablePadding="12dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
