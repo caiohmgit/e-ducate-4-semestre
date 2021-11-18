@@ -252,6 +252,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="minha_biblioteca">Minha Biblioteca</string>
+    <string name="livros_em_destaque">Livros em destaque</string>
+    <string name="nome_livro_setado">Harry Potter e a câmara secreta</string>
+    <string name="autor_setado_livro">Autor: E. Lockhart</string>
 
 
 </resources>

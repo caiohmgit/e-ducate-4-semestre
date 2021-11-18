@@ -36,8 +36,10 @@ class Login : AppCompatActivity() {
         val etUsuario : EditText = findViewById(R.id.editTextTextEmailAddress)
         val usuario:String = etUsuario.text.toString()
         if (usuario == "1") {
+            finish()
             startActivity(Intent(this, MenuBarAdm::class.java))
         } else {
+            finish()
             startActivity(Intent(this, MenuBar::class.java))
         }
 

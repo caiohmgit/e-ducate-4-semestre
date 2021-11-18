@@ -5,17 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 import com.squareup.picasso.Picasso
 
 
 class BibliotecaRecomendadaFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    lateinit var flBibliotecaRecomendada : FrameLayout
 
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,6 +28,14 @@ class BibliotecaRecomendadaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val biblioteca:Biblioteca = arguments?.getSerializable("biblioteca") as Biblioteca
+
+        flBibliotecaRecomendada = view.findViewById(R.id.fl_biblioteca_recomendada)
+        flBibliotecaRecomendada.setOnClickListener {
+            val argumentos = Bundle()
+            argumentos.putSerializable("dados", biblioteca)
+            findNavController().navigate(R.id.library_visualization, argumentos)
+        }
+
 
         val nomeBiblioteca: TextView = view.findViewById(R.id.nome_biblioteca)
         val enderecoBiblioteca: TextView = view.findViewById(R.id.endereco_biblioteca)

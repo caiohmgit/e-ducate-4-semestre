@@ -19,6 +19,7 @@
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/custom_search_biblio_item.xml" value="0.3828125" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/custom_search_input.xml" value="0.3828125" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/cutom_button_baixar_pdf.xml" value="0.2203125" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/ic_autor.xml" value="0.38425925925925924" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/ic_circle_form.xml" value="0.2203125" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/ic_favorite.xml" value="0.3828125" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/ic_location.xml" value="0.3828125" />
@@ -55,6 +56,7 @@
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_ajuda.xml" value="0.30104166666666665" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_avaliar_biblioteca.xml" value="0.22" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_biblioteca.xml" value="0.25" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_biblioteca_pesquisa.xml" value="0.36302083333333335" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_biblioteca_recomendada.xml" value="0.25" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_contato.xml" value="0.25" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_editar_biblio_endereco.xml" value="0.25" />
@@ -64,9 +66,12 @@
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_editar_biblio_visualizacao.xml" value="0.25" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_editar_perfil.xml" value="0.25" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_gallery.xml" value="0.3875" />
-        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_home_adm.xml" value="0.22" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_livro_destaque.xml" value="0.3875" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_livros_em_destaque.xml" value="0.25" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_perfil.xml" value="0.22" />
+        <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_pesquisa_bibliotecas.xml" value="0.36302083333333335" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_slideshow.xml" value="0.3875" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_torne_se_adm.xml" value="0.25" />
         <entry key="..\:/Users/Tapps/Documents/Bruno/RepositorioEducate/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_visualizacao_main_biblio_adm.xml" value="0.25" />

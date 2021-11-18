@@ -1,5 +1,6 @@
 package com.example.e_ducate
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.drawerlayout.widget.DrawerLayout
@@ -56,5 +57,10 @@ class MenuBarAdm : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_menu_bar)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    fun logout(item: android.view.MenuItem) {
+        finish()
+        startActivity(Intent(this, Login::class.java))
     }
 }

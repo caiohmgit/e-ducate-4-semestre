@@ -3,10 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BibliotecaPesquisaFragment"
-    android:id="@+id/fl_biblioteca_pesquisa">
-
-
+    tools:context=".LivroDestaqueFragment"
+    android:id="@+id/fl_livro_destaque">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,51 +16,49 @@
         android:orientation="horizontal">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="105dp"
+            android:id="@+id/img_livro"
+            android:layout_width="95dp"
             android:layout_height="120dp"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            android:id="@+id/img_biblioteca"
             shapeAppearanceOverlay="@style/image_seach_biblio_item"
             />
 
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
+            android:layout_marginRight="25dp"
             android:layout_marginTop="15dp"
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/nome_livro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@string/nome_livro_setado"
                 android:fontFamily="@font/exo2_bold"
-                android:textColor="#404040"
-                android:textSize="15sp"
-                android:id="@+id/nome_biblioteca"
+                android:textColor="@color/laranja_padrao"
+                android:textSize="15.5sp"
                 />
 
             <TextView
+                android:id="@+id/autor_livro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:drawableStart="@drawable/ic_location"
+                android:drawableStart="@drawable/ic_autor"
+                android:text="@string/autor_setado_livro"
+                android:textColor="#969595"
                 android:drawablePadding="5dp"
                 android:fontFamily="@font/exo2_regular"
                 android:paddingVertical="5dp"
-                android:id="@+id/endereco_biblioteca"
 
                 />
 
 
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/ic_favorite" />
 
 
     </LinearLayout>

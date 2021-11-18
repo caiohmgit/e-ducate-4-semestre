@@ -5,12 +5,11 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.e_ducate.Biblioteca
 import com.example.e_ducate.BibliotecaPesquisaFragment
 import com.example.e_ducate.ClientRest
@@ -36,6 +35,11 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val buttonTelaPesquisa: ImageView = root.findViewById(R.id.btn_ir_tela_pesquisa)
+        buttonTelaPesquisa.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.pesquisa_bibliotecas)
+        })
 
 
         val resultadoBusca: LinearLayout = root.findViewById(R.id.ll_bibliotecas_recomendadas)
@@ -69,7 +73,7 @@ class HomeFragment : Fragment() {
             }
 
             override fun onFailure(call: Call<List<Biblioteca>>, t: Throwable) {
-//                Log.e("API Biblioteca", t.message!!)
+                Log.e("API Biblioteca", t.message!!)
 //                Toast.makeText(context, "Erro na chamada da API", Toast.LENGTH_SHORT).show()
             }
 

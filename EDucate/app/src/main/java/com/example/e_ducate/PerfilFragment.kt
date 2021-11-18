@@ -35,12 +35,13 @@ class PerfilFragment : Fragment() {
 
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar_perfil)
         buttonFechar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.nav_home)
+            findNavController().navigate(if(activity is MenuBar) R.id.nav_home else R.id.nav_home_adm)
+
         })
 
         val buttonIrTelaEditar: Button = root.findViewById(R.id.btn_editar_informacoes)
         buttonIrTelaEditar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.nav_profile)
+            findNavController().navigate(R.id.editar_perfil)
         })
 
 

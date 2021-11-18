@@ -20,6 +20,7 @@ import com.example.e_ducate.databinding.ActivityMenuBarBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import kotlin.system.exitProcess
 
 class MenuBar : AppCompatActivity() {
 
@@ -52,13 +53,6 @@ class MenuBar : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
 
-
-
-
-
-
-
-
     }
 
 
@@ -68,7 +62,9 @@ class MenuBar : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-    fun irTelaPesquisa(v: View){
-        startActivity(Intent(this, PesquisaBibliotecas::class.java))
+
+    fun logout(item: android.view.MenuItem) {
+        finish()
+        startActivity(Intent(this, Login::class.java))
     }
 }
