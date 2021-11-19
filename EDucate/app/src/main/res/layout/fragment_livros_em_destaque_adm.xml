@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LivrosEmDestaqueAdmFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:src="@drawable/fundotelalivros2"
+                android:scaleType="fitXY"
+                app:shapeAppearanceOverlay="@style/image_header_edit_biblio"
+                android:adjustViewBounds="true"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="@drawable/custom_insufilm_editar_biblio"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:fontFamily="@font/exo2_medium"
+                android:letterSpacing=".08"
+                android:paddingTop="40dp"
+                android:text="@string/livros_em_destaque"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#F2EEEEEE"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/nome_biblioteca"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginRight="80dp"
+                android:fontFamily="@font/exo2_medium"
+                android:letterSpacing=".08"
+                android:paddingTop="35dp"
+                android:text="@string/nome_setado_biblio"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#F2EEEEEE"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_adicionar_livro"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="235dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginLeft="55dp"
+                android:background="@drawable/custom_orange_defaut_button"
+                android:text="@string/adicionar_livro"
+                android:textAllCaps="false"
+                android:fontFamily="@font/exo2_semibold"
+                android:letterSpacing="0.07"
+                android:textColor="@color/white"
+                android:drawableEnd="@drawable/ic_add_livro"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:textSize="18sp"
+                />
+
+            <Button
+                android:id="@+id/btn_fechar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="345dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/botao_fechar"
+                android:fontFamily="sans-serif"
+                android:text="@string/botao_fechar"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="290dp"
+            android:layout_marginBottom="15dp"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_livros_em_destaque_adm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

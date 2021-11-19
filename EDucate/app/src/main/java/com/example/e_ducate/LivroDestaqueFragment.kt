@@ -27,14 +27,14 @@ class LivroDestaqueFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val livro:Livro = arguments?.getSerializable("livro") as Livro
-        val biblioteca:Biblioteca = arguments?.getSerializable("dados") as Biblioteca
+        val biblioteca:Biblioteca = arguments?.getSerializable("biblioteca") as Biblioteca
 
         flLivroDestaque = view.findViewById(R.id.fl_livro_destaque)
         flLivroDestaque.setOnClickListener {
             val argumentos = Bundle()
             argumentos.putSerializable("livro", livro)
             argumentos.putSerializable("biblioteca", biblioteca)
-            findNavController().navigate(R.id.livro_visualization, argumentos)
+            findNavController().navigate(if(activity is MenuBar) R.id.livro_visualization else R.id.livro_visualization_adm, argumentos)
         }
 
         val nomeLivro: TextView = view.findViewById(R.id.nome_livro)

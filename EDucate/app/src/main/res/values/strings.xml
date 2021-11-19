@@ -257,6 +257,10 @@
     <string name="autor_setado_livro">E. Lockhart</string>
     <string name="genero_setado_livro">Aventura</string>
     <string name="btn_voltar_aos_livros">Voltar aos Livros em Destaque</string>
+    <string name="btn_excluir_livro">Excluir Livro</string>
+    <string name="btn_retornar">Retornar</string>
+    <string name="ex_url_imagem_capa_livro">Ex. https://capa-livro.com</string>
+    <string name="url_imagem_capa_livro">URL Imagem de Capa do Livro</string>
 
 
 </resources>

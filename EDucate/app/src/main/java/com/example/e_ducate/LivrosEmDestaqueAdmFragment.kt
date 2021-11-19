@@ -5,19 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.*
 import androidx.navigation.fragment.findNavController
-import com.example.e_ducate.databinding.FragmentHomeBinding
+import com.example.e_ducate.databinding.FragmentLivrosEmDestaqueAdmBinding
 import com.example.e_ducate.databinding.FragmentLivrosEmDestaqueBinding
+import com.squareup.picasso.Picasso
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 
-class LivrosEmDestaqueFragment : Fragment() {
-    private var _binding: FragmentLivrosEmDestaqueBinding? = null
+class LivrosEmDestaqueAdmFragment : Fragment() {
+
+    private var _binding: FragmentLivrosEmDestaqueAdmBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -30,26 +30,35 @@ class LivrosEmDestaqueFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentLivrosEmDestaqueBinding.inflate(inflater, container, false)
+        _binding = FragmentLivrosEmDestaqueAdmBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val biblioteca:Biblioteca = arguments?.getSerializable("biblioteca") as Biblioteca
 
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar)
         buttonFechar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.library_visualization)
+            findNavController().navigate(R.id.library_visualization_adm)
         })
 
-        val biblioteca:Biblioteca = arguments?.getSerializable("dados") as Biblioteca
+        val buttonAdicionarLivro: Button = root.findViewById(R.id.btn_adicionar_livro)
+        buttonAdicionarLivro.setOnClickListener(View.OnClickListener {
+            var argumentos = Bundle()
+            argumentos.putSerializable("biblioteca", biblioteca)
+            findNavController().navigate(R.id.adicionar_livro_fragment, argumentos)
+        })
+
 
         val nomeBiblioteca:TextView = root.findViewById(R.id.nome_biblioteca)
 
         nomeBiblioteca.text = biblioteca.nome
 
-        val exibicaoLivros: LinearLayout = root.findViewById(R.id.ll_livros_em_destaque)
+        val exibicaoLivros: LinearLayout = root.findViewById(R.id.ll_livros_em_destaque_adm)
         exibicaoLivros.removeAllViews()
 
         val clientAPIBiblioteca = ClientRest.criarClientBiblioteca()
 
-        clientAPIBiblioteca?.getLivrosDaBiblioteca(biblioteca.id)?.enqueue(object : Callback<List<Livro>> {
+        clientAPIBiblioteca?.getLivrosDaBiblioteca(biblioteca.id)?.enqueue(object :
+            Callback<List<Livro>> {
             override fun onResponse(
                 call: Call<List<Livro>>,
                 response: Response<List<Livro>>

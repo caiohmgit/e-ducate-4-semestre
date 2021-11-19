@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdicionarLivroFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="411dp"
+            android:layout_height="222dp"
+            android:background="@drawable/custom_header_add_livros"
+            android:orientation="vertical"
+            android:id="@+id/rl_header"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo2_light"
+                android:text="@string/adicionar_livro"
+                android:textColor="#A3FFFFFF"
+                android:textSize="40sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+
+
+            <Button
+                android:id="@+id/btn_fechar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="335dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/botao_fechar_preto"
+                android:fontFamily="sans-serif"
+                android:text="@string/botao_fechar"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="95dp"
+                android:background="@drawable/custom_foreground_image_shape2" />
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="95dp"
+                android:src="@drawable/ic_add_photo" />
+
+
+            <View
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="95dp"
+                android:background="@drawable/custom_foreground_image_shape" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/custom_button_add_livro"
+                android:fontFamily="@font/exo2_regular"
+                android:padding="5dp"
+                android:text="@string/btn_adicionar_img_livro"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="345dp"
+            >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:paddingBottom="40dp"
+            android:paddingTop="30dp"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo2_bold"
+                android:text="@string/nome_livro"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_nome_livro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo2_regular"
+                android:hint="@string/ex_nome_livro"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo2_bold"
+                        android:text="@string/autor_livro"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_autor_livro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo2_regular"
+                        android:hint="@string/ex_autor_livro"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo2_bold"
+                        android:text="@string/genero_livro"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_genero_livro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo2_regular"
+                        android:hint="@string/ex_genero_livro"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/exo2_bold"
+                android:text="@string/editora_livro"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_editora_livro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo2_regular"
+                android:hint="@string/ex_editora_livro"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/exo2_bold"
+                android:text="@string/url_imagem_capa_livro"
+                android:textColor="@color/cinza_tom_escuro"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/et_url_imagem_capa_livro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo2_medium"
+                android:hint="@string/ex_url_imagem_capa_livro"
+                android:textColor="#9A000000" />
+
+
+            <Button
+                android:id="@+id/btn_cadastrar_livro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/custom_button_cadastrar"
+                android:drawableEnd="@drawable/ic_add_livro"
+                android:paddingEnd="8dp"
+                android:text="@string/btn_cadastrar_livro"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

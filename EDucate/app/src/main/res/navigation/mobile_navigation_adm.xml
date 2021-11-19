@@ -66,6 +66,21 @@
         android:name="com.example.e_ducate.EditarBiblioVisualizacaoFragment"
         android:label="fragment_editar_biblio_visualizacao"
         tools:layout="@layout/fragment_editar_biblio_visualizacao" />
+    <fragment
+        android:id="@+id/livros_em_destaque_adm"
+        android:name="com.example.e_ducate.LivrosEmDestaqueAdmFragment"
+        android:label="fragment_livros_em_destaque_adm"
+        tools:layout="@layout/fragment_livros_em_destaque_adm" />
+    <fragment
+        android:id="@+id/livro_visualization_adm"
+        android:name="com.example.e_ducate.VisualizacaoLivroAdmFragment"
+        android:label="fragment_visualizacao_livro_adm"
+        tools:layout="@layout/fragment_visualizacao_livro_adm" />
+    <fragment
+        android:id="@+id/adicionar_livro_fragment"
+        android:name="com.example.e_ducate.AdicionarLivroFragment"
+        android:label="fragment_adicionar_livro"
+        tools:layout="@layout/fragment_adicionar_livro" />
 
 
 </navigation>
