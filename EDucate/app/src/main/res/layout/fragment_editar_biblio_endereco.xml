@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".EditarBiblioEnderecoFragment">
 
     <RelativeLayout
@@ -21,7 +22,7 @@
                 android:layout_height="240dp"
                 android:src="@drawable/imgbiblio"
                 android:scaleType="fitXY"
-                shapeAppearanceOverlay="@style/image_header_edit_biblio"
+                app:shapeAppearanceOverlay="@style/image_header_edit_biblio"
                 android:adjustViewBounds="true"
                 />
 

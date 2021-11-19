@@ -254,7 +254,9 @@
     <string name="minha_biblioteca">Minha Biblioteca</string>
     <string name="livros_em_destaque">Livros em destaque</string>
     <string name="nome_livro_setado">Harry Potter e a câmara secreta</string>
-    <string name="autor_setado_livro">Autor: E. Lockhart</string>
+    <string name="autor_setado_livro">E. Lockhart</string>
+    <string name="genero_setado_livro">Aventura</string>
+    <string name="btn_voltar_aos_livros">Voltar aos Livros em Destaque</string>
 
 
 </resources>

@@ -22,7 +22,7 @@
                 android:layout_height="240dp"
                 android:src="@drawable/imgbiblio"
                 android:scaleType="fitXY"
-                shapeAppearanceOverlay="@style/image_header_edit_biblio"
+                app:shapeAppearanceOverlay="@style/image_header_edit_biblio"
                 android:adjustViewBounds="true"
                 />
 

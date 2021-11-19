@@ -60,6 +60,11 @@
         android:name="com.example.e_ducate.LivrosEmDestaqueFragment"
         android:label="fragment_livros_em_destaque"
         tools:layout="@layout/fragment_livros_em_destaque" />
+    <fragment
+        android:id="@+id/livro_visualization"
+        android:name="com.example.e_ducate.VisualizacaoLivroFragment"
+        android:label="fragment_visualizacao_livro"
+        tools:layout="@layout/fragment_visualizacao_livro" />
 
 
 </navigation>

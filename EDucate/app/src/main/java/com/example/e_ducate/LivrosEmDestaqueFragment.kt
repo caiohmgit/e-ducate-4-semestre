@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import com.example.e_ducate.databinding.FragmentHomeBinding
 import com.example.e_ducate.databinding.FragmentLivrosEmDestaqueBinding
@@ -38,6 +39,10 @@ class LivrosEmDestaqueFragment : Fragment() {
         })
 
         val biblioteca:Biblioteca = arguments?.getSerializable("dados") as Biblioteca
+
+        val nomeBiblioteca:TextView = root.findViewById(R.id.nome_biblioteca)
+
+        nomeBiblioteca.text = biblioteca.nome
 
         val exibicaoLivros: LinearLayout = root.findViewById(R.id.ll_livros_em_destaque)
         exibicaoLivros.removeAllViews()

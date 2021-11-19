@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
@@ -12,6 +13,8 @@ import com.squareup.picasso.Picasso
 
 
 class LivroDestaqueFragment : Fragment() {
+
+    lateinit var flLivroDestaque : FrameLayout
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,8 +27,15 @@ class LivroDestaqueFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val livro:Livro = arguments?.getSerializable("livro") as Livro
+        val biblioteca:Biblioteca = arguments?.getSerializable("dados") as Biblioteca
 
-
+        flLivroDestaque = view.findViewById(R.id.fl_livro_destaque)
+        flLivroDestaque.setOnClickListener {
+            val argumentos = Bundle()
+            argumentos.putSerializable("livro", livro)
+            argumentos.putSerializable("biblioteca", biblioteca)
+            findNavController().navigate(R.id.livro_visualization, argumentos)
+        }
 
         val nomeLivro: TextView = view.findViewById(R.id.nome_livro)
         val autorLivro: TextView = view.findViewById(R.id.autor_livro)

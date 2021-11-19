@@ -9,7 +9,7 @@ interface ClientAPIBiblioteca {
     @GET("/biblio/bibliotecas")
     fun getBibliotecas(): Call<List<Biblioteca>>
 
-    @GET("/livros/{id_biblio}")
+    @GET("/livros/{id}")
     fun getLivrosDaBiblioteca(@Path("id") id:Int): Call<List<Livro>>
 
     @GET("/biblio/biblioteca/{id}")
