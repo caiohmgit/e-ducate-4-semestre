@@ -193,4 +193,8 @@
     <string name="nome_completo">Full Name</string>
     <string name="dados_pessoais">Personal Information</string>
     <string name="se_atente_ao_que_pede">Pay attention to what you ask for and fill in the fields properly.</string>
+    <string name="mensagem_explicativa_erro">Please try again later. If the problem persists, please contact our support.</string>
+    <string name="btn_voltar_tela_erro">Come back</string>
+    <string name="mensagem_nao">Oh no!</string>
+    <string name="mensagem_errado">Looks like something went wrong</string>
 </resources>
