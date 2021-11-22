@@ -30,7 +30,7 @@
         tools:layout="@layout/fragment_perfil" />
 
     <fragment
-        android:id="@+id/editarPerfilFragment"
+        android:id="@+id/editar_perfil"
         android:name="com.example.e_ducate.EditarPerfilFragment"
         android:label="fragment_editar_perfil"
         tools:layout="@layout/fragment_editar_perfil" />
@@ -50,6 +50,21 @@
         android:name="com.example.e_ducate.TorneSeAdmFragment"
         android:label="fragment_torne_se_adm"
         tools:layout="@layout/fragment_torne_se_adm" />
+    <fragment
+        android:id="@+id/pesquisa_bibliotecas"
+        android:name="com.example.e_ducate.PesquisaBibliotecasFragment"
+        android:label="fragment_pesquisa_bibliotecas"
+        tools:layout="@layout/fragment_pesquisa_bibliotecas" />
+    <fragment
+        android:id="@+id/livros_em_destaque"
+        android:name="com.example.e_ducate.LivrosEmDestaqueFragment"
+        android:label="fragment_livros_em_destaque"
+        tools:layout="@layout/fragment_livros_em_destaque" />
+    <fragment
+        android:id="@+id/livro_visualization"
+        android:name="com.example.e_ducate.VisualizacaoLivroFragment"
+        android:label="fragment_visualizacao_livro"
+        tools:layout="@layout/fragment_visualizacao_livro" />
 
 
 </navigation>

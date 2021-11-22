@@ -2,7 +2,8 @@ package com.example.e_ducate
 
 import java.io.Serializable
 
-data class Biblioteca(val nome:String,
+data class Biblioteca(val id:Int,
+                      val nome:String,
                       val descricao:String,
                       val horarioFunc:String,
                       val nota:Double?,

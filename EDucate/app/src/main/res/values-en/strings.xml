@@ -82,8 +82,6 @@
     <string name="adicione_uma_descricao">Add a Description to your Library:</string>
     <string name="descreva_rapidamente_desc">Briefly describe your library, citing its strengths and what it has to offer... </string>
     <string name="adicione_uma_foto">Add a photo from your Library</string>
-    <string name="dados_pessoais">Personal Data</string>
-    <string name="se_atente_ao_que_pede">Pay attention to what you ask for and fill in the fields properly. </string>
     <string name="terceiro_passo">Third Step:</string>
     <string name="palavras_chaves">Keywords</string>
     <string name="selecione_oito_palavras">Select up to 8 words:</string>
@@ -172,4 +170,27 @@
     <string name="btn_ver_livros">Featured Books</string>
     <string name="sim">Yes</string>
     <string name="nao">No</string>
+    <string name="url_imagem_perfil">Profile Image URL</string>
+    <string name="ex_url_imagem_perfil">https://profile-image.com</string>
+    <string name="avalie">Rate this Library!</string>
+    <string name="descricao_tela_avaliacao_biblioteca">Your rating helps people to get to know the library better, as well as a new opportunity for improvement for a better future experience!</string>
+    <string name="hint_comentario_avaliacao">Leave a Comment (Optional)</string>
+    <string name="btn_avaliar">Send</string>
+    <string name="exemplo_nome_completo">ex. José da Silva</string>
+    <string name="exemplo_cpf">ex. 123.456.789-10</string>
+    <string name="email">E-mail</string>
+    <string name="cpf">CPF</string>
+    <string name="exemplo_email">ex. exemplo@dominio.com</string>
+    <string name="rg">RG</string>
+    <string name="exemplo_rg">ex. 12.345.678-9</string>
+    <string name="exemplo_nome_biblioteca">ex. Biblioteca São Sebastião</string>
+    <string name="exemplo_cnpj">ex. xx.xxx.xxx/000x-xx</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="exemplo_endereco_biblioteca">ex. Rua Adamastor, 90 - Paulista</string>
+    <string name="telefone_biblioteca">Phone</string>
+    <string name="exemplo_telefone_biblioteca">ex. (11) 22222-3333</string>
+    <string name="dados_da_biblioteca">Library Information</string>
+    <string name="nome_completo">Full Name</string>
+    <string name="dados_pessoais">Personal Information</string>
+    <string name="se_atente_ao_que_pede">Pay attention to what you ask for and fill in the fields properly.</string>
 </resources>

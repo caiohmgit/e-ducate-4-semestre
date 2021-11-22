@@ -4,12 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import kotlin.system.exitProcess
 
 class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+
+
     }
 
     fun cadastro(v: View){
@@ -22,6 +26,23 @@ class Login : AppCompatActivity() {
 
     fun irTelaPrincipalUsuario(v: View){
         startActivity(Intent(this, MenuBar::class.java))
+    }
+
+    fun irTelaPrincipalADM(v: View){
+        startActivity(Intent(this, MenuBarAdm::class.java))
+    }
+
+    fun irTelaPrincipal(v:View) {
+        val etUsuario : EditText = findViewById(R.id.editTextTextEmailAddress)
+        val usuario:String = etUsuario.text.toString()
+        if (usuario == "1") {
+            finish()
+            startActivity(Intent(this, MenuBarAdm::class.java))
+        } else {
+            finish()
+            startActivity(Intent(this, MenuBar::class.java))
+        }
+
     }
 
     fun fechar(v: View){

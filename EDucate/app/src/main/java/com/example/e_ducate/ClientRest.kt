@@ -7,7 +7,7 @@ object ClientRest {
 
     fun criarClientBiblioteca(): ClientAPIBiblioteca? {
         return Retrofit.Builder()
-            .baseUrl("http://192.168.15.8:8080/sistema/")
+            .baseUrl("http://10.0.2.2:8080/sistema/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(ClientAPIBiblioteca::class.java)

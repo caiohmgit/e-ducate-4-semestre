@@ -17,7 +17,4 @@ class CadastroBiblio4 : AppCompatActivity() {
     }
 
 
-    fun irTelaPrincipalBiblio(v: View){
-        startActivity(Intent(this, VisualizacaoCoreBiblioADM::class.java))
-    }
 }

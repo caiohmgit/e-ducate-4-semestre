@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LivroDestaqueFragment"
+    android:id="@+id/fl_livro_destaque">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_search_biblio_item"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_livro"
+            android:layout_width="95dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            shapeAppearanceOverlay="@style/image_seach_biblio_item"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nome_livro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_livro_setado"
+                android:fontFamily="@font/exo2_bold"
+                android:textColor="@color/laranja_padrao"
+                android:textSize="15.5sp"
+                />
+
+            <TextView
+                android:id="@+id/autor_livro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/ic_autor"
+                android:text="@string/autor_setado_livro"
+                android:textColor="#969595"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/exo2_regular"
+                android:paddingVertical="5dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

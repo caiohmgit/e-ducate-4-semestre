@@ -33,10 +33,17 @@ class AvaliarBibliotecaFragment : Fragment() {
         val root: View = binding.root
 
 
-        val button: Button = root.findViewById(R.id.btn_fechar_ajuda)
-        button.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.nav_home)
+        val buttonFechar: Button = root.findViewById(R.id.btn_fechar_tela_biblioteca)
+        buttonFechar.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.library_visualization)
         })
+
+        val buttonCancelar: Button = root.findViewById(R.id.btn_cancelar)
+        buttonCancelar.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.library_visualization)
+        })
+
+
 
         val estrela1: ImageView = root.findViewById(R.id.star_rate1)
         val estrela2: ImageView = root.findViewById(R.id.star_rate2)

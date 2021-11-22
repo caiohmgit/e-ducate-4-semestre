@@ -45,6 +45,14 @@
 
     </style>
 
+    <style name="image_biblio_home_adm" parent="">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+
+
+    </style>
+
     <style name="Theme.TesteMenuBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TesteMenuBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

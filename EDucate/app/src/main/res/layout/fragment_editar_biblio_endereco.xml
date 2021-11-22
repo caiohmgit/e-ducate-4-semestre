@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditarBiblioEnderecoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/imgbiblio"
+                android:scaleType="fitXY"
+                app:shapeAppearanceOverlay="@style/image_header_edit_biblio"
+                android:adjustViewBounds="true"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@drawable/custom_insufilm_editar_biblio"
+
+                />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="240dp"
+                android:fontFamily="@font/exo2_medium"
+                android:letterSpacing=".08"
+                android:paddingLeft="20dp"
+                android:paddingTop="55dp"
+                android:text="@string/editar_biblioteca"
+                android:textAllCaps="true"
+                android:textColor="#CCEEEEEE"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_fechar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="335dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/botao_fechar"
+                android:fontFamily="sans-serif"
+                android:text="@string/botao_fechar"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/exo2_bold"
+                android:text="@string/endereco"
+                android:textColor="@color/laranja_padrao"
+                android:textSize="27sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/exo2_bold"
+                android:text="@string/cep"
+                android:textColor="@color/cinza_padrao"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/cep_biblioteca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo2_medium"
+                android:hint="@string/exemplo_cep"
+                android:text="@string/cep_setado_biblio"
+                android:textColor="#707070"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="265dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/exo2_bold"
+                        android:text="@string/logradouro"
+                        android:textColor="@color/cinza_padrao"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/rua_biblioteca"
+                        android:layout_width="265dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo2_medium"
+                        android:hint="@string/exemplo_logradouro"
+                        android:text="@string/logradouro_setado_biblio"
+                        android:textColor="#707070"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/exo2_bold"
+                        android:text="@string/numero_biblioteca"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/cinza_padrao"
+                        android:textSize="16sp"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/numero_biblioteca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo2_medium"
+                        android:hint="@string/exemplo_numero_biblioteca"
+                        android:text="@string/numero_setado_biblio"
+                        android:textAlignment="textEnd"
+                        android:textColor="#707070"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/exo2_bold"
+                        android:text="@string/bairro"
+                        android:textColor="@color/cinza_padrao"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/bairro_biblioteca"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo2_medium"
+                        android:hint="@string/exemplo_bairro"
+                        android:text="@string/bairro_setado_biblio"
+                        android:textColor="#707070"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/exo2_bold"
+                        android:text="@string/cidade"
+                        android:textColor="@color/cinza_padrao"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/cidade_biblioteca"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/exo2_medium"
+                        android:hint="@string/exemplo_cidade"
+                        android:text="@string/cidade_setado_biblio"
+                        android:textColor="#707070"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/exo2_bold"
+                        android:text="@string/estado_biblioteca"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/cinza_padrao"
+                        android:textSize="16sp"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/estado_biblioteca"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/exo2_medium"
+                        android:hint="@string/exemplo_estado"
+                        android:text="@string/estado_setado_biblio"
+                        android:textAlignment="textStart"
+                        android:textColor="#707070"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_atualizar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/custom_orange_defaut_button"
+                android:drawableEnd="@drawable/ic_check"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/exo2_bold"
+                android:gravity="center_horizontal"
+                android:paddingVertical="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="8dp"
+                android:text="@string/btn_atualizar"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -32,9 +32,15 @@ class AjudaFragment : Fragment() {
         val root: View = binding.root
 
 
-        val button: Button = root.findViewById(R.id.btn_fechar_ajuda)
-        button.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.nav_home)
+        val buttonFechar: Button = root.findViewById(R.id.btn_fechar_ajuda)
+        buttonFechar.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(if(activity is MenuBar) R.id.nav_home else R.id.nav_home_adm)
+
+        })
+
+        val buttonAjuda: Button = root.findViewById(R.id.btn_ajuda)
+        buttonAjuda.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.library_visualization)
         })
 
 

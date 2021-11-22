@@ -11,35 +11,29 @@
                 <item
                     android:id="@+id/nav_home"
                     android:icon="@drawable/ic_home"
-                    android:iconTint="@color/laranja_padrao"
                     android:title="@string/menubar_home" />
 
                 <item
                     android:id="@+id/nav_map"
                     android:icon="@drawable/ic_location"
-                    android:iconTint="@color/laranja_padrao"
                     android:title="@string/mapa_de_bibliotecas" />
                 <item
                     android:id="@+id/nav_profile"
                     android:icon="@drawable/ic_profile"
-                    android:iconTint="@color/laranja_padrao"
                     android:title="@string/menubar_perfil" />
                 <item
                     android:id="@+id/nav_contact"
                     android:icon="@drawable/ic_email"
-                    android:iconTint="@color/laranja_padrao"
                     android:title="@string/menubar_contato" />
 
                 <item
                     android:id="@+id/nav_help"
                     android:icon="@drawable/ic_help"
-                    android:iconTint="@color/laranja_padrao"
                     android:title="@string/menubar_ajuda" />
 
                 <item
                     android:id="@+id/nav_config"
                     android:icon="@drawable/ic_settings"
-                    android:iconTint="@color/laranja_padrao"
                     android:title="@string/menubar_configuracoes" />
             </group>
 
@@ -57,7 +51,6 @@
 
                 android:id="@+id/nav_torne_adm"
                 android:icon="@drawable/ic_manager"
-                android:iconTint="@color/laranja_padrao"
                 android:title="@string/torne_se_adm" />
 
 
@@ -73,7 +66,7 @@
 
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_logout"
-            android:iconTint="@color/laranja_padrao"
+            android:onClick="logout"
             android:title="@string/logout" />
 
 

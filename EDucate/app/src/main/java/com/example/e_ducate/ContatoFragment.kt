@@ -34,9 +34,9 @@ class ContatoFragment : Fragment() {
         _binding = FragmentContatoBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val button: Button = root.findViewById(R.id.btn_fechar_contato)
-        button.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.nav_home)
+        val buttonFechar: Button = root.findViewById(R.id.btn_fechar_contato)
+        buttonFechar.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(if(activity is MenuBar) R.id.nav_home else R.id.nav_home_adm)
         })
 
 

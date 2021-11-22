@@ -20,6 +20,7 @@ import com.example.e_ducate.databinding.ActivityMenuBarBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import kotlin.system.exitProcess
 
 class MenuBar : AppCompatActivity() {
 
@@ -41,23 +42,15 @@ class MenuBar : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home,
-                R.id.nav_profile,
-                R.id.nav_contact,
-                R.id.nav_help,
-                R.id.nav_torne_adm
+                R.id.nav_home_adm,
+                R.id.nav_profile_adm,
+                R.id.nav_contact_adm,
+                R.id.nav_help_adm,
 
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
-
-
-
-
-
-
 
 
     }
@@ -69,7 +62,9 @@ class MenuBar : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-    fun irTelaPesquisa(v: View){
-        startActivity(Intent(this, PesquisaBibliotecas::class.java))
+
+    fun logout(item: android.view.MenuItem) {
+        finish()
+        startActivity(Intent(this, Login::class.java))
     }
 }

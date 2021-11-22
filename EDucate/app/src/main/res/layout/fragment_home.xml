@@ -53,13 +53,12 @@
                 android:src="@drawable/ic_circle_white" />
 
             <ImageView
+                android:id="@+id/btn_ir_tela_pesquisa"
                 android:layout_width="40dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="275dp"
                 android:layout_marginTop="40dp"
-                android:src="@drawable/ic_search"
-                android:onClick="irTelaPesquisa"
-                />
+                android:src="@drawable/ic_search" />
 
             <ImageView
                 android:layout_width="60dp"
@@ -68,12 +67,16 @@
                 android:layout_marginTop="28dp"
                 android:src="@drawable/ic_circle_white" />
 
+
+
             <ImageView
+
                 android:layout_width="40dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="335dp"
                 android:layout_marginTop="40dp"
                 android:src="@drawable/ic_menubar" />
+
 
             <TextView
                 android:layout_width="wrap_content"
