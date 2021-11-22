@@ -63,18 +63,18 @@
                     android:orientation="vertical">
 
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/exo2_bold"
-                        android:text="@string/primeiro_nome"
-                        android:textSize="18sp" />
-
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/exo2_medium"
                         android:hint="@string/ex_primeiro_nome_contato"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo2_bold"
+                        android:text="@string/primeiro_nome"
                         android:textSize="18sp" />
 
                 </LinearLayout>
@@ -86,18 +86,18 @@
                     android:orientation="vertical">
 
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/exo2_bold"
-                        android:text="@string/ultimo_nome"
-                        android:textSize="18sp" />
-
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/exo2_medium"
                         android:hint="@string/ex_ultimo_nome_contato"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo2_bold"
+                        android:text="@string/ultimo_nome"
                         android:textSize="18sp" />
 
                 </LinearLayout>
@@ -112,18 +112,18 @@
                 android:orientation="vertical">
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/exo2_bold"
-                    android:text="@string/email_contato"
-                    android:textSize="18sp" />
-
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/exo2_medium"
                     android:hint="@string/ex_email_contato"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo2_bold"
+                    android:text="@string/email_contato"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -134,13 +134,6 @@
                 android:layout_marginTop="15dp"
                 android:orientation="vertical">
 
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/exo2_bold"
-                    android:text="@string/numero_celular_contato"
-                    android:textSize="18sp" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -149,6 +142,13 @@
                     android:hint="@string/ex_nro_celular_contato"
                     android:textSize="18sp" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo2_bold"
+                    android:text="@string/numero_celular_contato"
+                    android:textSize="18sp" />
+
             </LinearLayout>
 
 
@@ -158,20 +158,6 @@
                 android:layout_marginTop="15dp"
                 android:orientation="vertical">
 
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/exo2_bold"
-                    android:text="@string/mensagem_contato"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:fontFamily="@font/exo2_medium"
-                    android:hint="@string/ex_mensagem_contato"
-                    android:textSize="18sp" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -181,14 +167,28 @@
                     android:layout_marginRight="30dp"
                     android:background="@drawable/custom_button_enviar_contato"
                     android:fontFamily="@font/exo2_regular"
+                    android:onClick="fechar"
                     android:text="@string/btn_enviar"
                     android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="30dp"
-                    android:onClick="fechar"
 
                     />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:fontFamily="@font/exo2_medium"
+                    android:hint="@string/ex_mensagem_contato"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo2_bold"
+                    android:text="@string/mensagem_contato"
+                    android:textSize="18sp" />
 
             </LinearLayout>
 

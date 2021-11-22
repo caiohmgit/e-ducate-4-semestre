@@ -92,10 +92,14 @@
         <entry key="..\:/Users/Tapps/android-studio/EDucate/app/src/main/res/layout/activity_visualizacao_core_biblio_adm.xml" value="0.25" />
         <entry key="..\:/Users/Tapps/android-studio/EDucate/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Tapps/android-studio/EDucate/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/User/Downloads/e-ducate-4-semestre/EDucate/app/src/main/res/layout/activity_contato.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/Downloads/e-ducate-4-semestre/EDucate/app/src/main/res/layout/activity_tela_ajuda.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/Downloads/e-ducate-4-semestre/EDucate/app/src/main/res/layout/activity_tela_erro.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/Downloads/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_ajuda.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

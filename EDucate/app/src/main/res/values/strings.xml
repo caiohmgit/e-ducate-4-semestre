@@ -232,5 +232,9 @@
     <string name="hint_comentario_avaliacao">Deixe um comentário (Opcional)</string>
     <string name="btn_avaliar">Avaliar</string>
 
-
+    <!--    Tela de erro-->
+<string name="mensagem_explicativa_erro">Tente novamente mais tarde.Se o problema continuar, entre em contato com o nosso suporte.</string>
+<string name="btn_voltar_tela_erro">Voltar</string>
+    <string name="mensagem_nao">Oh não!</string>
+    <string name="mensagem_errado">Parece que algo deu errado</string>
 </resources>

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".TelaAjuda">
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -16,33 +13,15 @@
             android:id="@+id/rl_header"
             android:layout_width="411dp"
             android:layout_height="222dp"
-            android:background="@drawable/custom_header_tela_ajuda"
+            android:background="#FFFFF"
             android:orientation="vertical">
 
         </RelativeLayout>
 
 
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="325dp"
-            android:layout_marginTop="38dp"
-            android:src="@drawable/ic_circle_dark_grey" />
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="35dp"
-            android:layout_marginLeft="335dp"
-            android:layout_marginTop="50dp"
-            android:src="@drawable/ic_close"
-
-            />
-
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="560dp"
+            android:layout_height="460dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="135dp"
             android:layout_marginRight="20dp"
@@ -51,53 +30,56 @@
             android:padding="20dp">
 
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="65dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/cutom_button_baixar_pdf"
-                android:fontFamily="@font/exo2_regular"
-                android:text="@string/btn_baixar_pdf"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="30dp"
-
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:fontFamily="@font/exo2_regular"
-                android:text="@string/mensagem_tela_contato"
-                android:textAlignment="center"
-                android:textColor="@color/cinza_padrao"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:fontFamily="@font/exo2_regular"
-                android:text="@string/orientacao_clicar_botao_ajuda"
-                android:textAlignment="center"
-                android:textColor="@color/cinza_padrao"
-                android:textSize="18sp" />
-
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="80dp"
                 android:fontFamily="@font/exo2_bold"
                 android:letterSpacing="0.06"
-                android:text="@string/titulo_tela_ajuda"
+                android:text="@string/mensagem_nao"
                 android:textAlignment="center"
-                android:textColor="@color/azul_claro"
+                android:textColor="@color/laranja_padrao"
                 android:textSize="33sp" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/exo2_regular"
+                android:text="@string/mensagem_errado"
+                android:textAlignment="center"
+                android:textColor="@color/laranja_padrao"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/exo2_regular"
+                android:text="@string/mensagem_explicativa_erro"
+                android:textAlignment="center"
+                android:textColor="@color/cinza_padrao"
+                android:textSize="20sp" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/botao_redondo_laranja"
+                android:fontFamily="@font/exo2_regular"
+                android:text="@string/btn_voltar_tela_erro"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
 
 
         </LinearLayout>
@@ -106,15 +88,14 @@
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:layout_marginTop="75dp"
-            android:src="@drawable/ic_circle_tela_ajuda" />
+            android:src="@drawable/ic_circle_close_red" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="110dp"
             android:layout_marginTop="90dp"
-            android:src="@drawable/ic_help" />
+            android:src="@drawable/ic_close" />
 
 
     </RelativeLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
