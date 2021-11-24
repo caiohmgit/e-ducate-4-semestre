@@ -284,6 +284,9 @@
     <string name="btn_retornar">Retornar</string>
     <string name="ex_url_imagem_capa_livro">Ex. https://capa-livro.com</string>
     <string name="url_imagem_capa_livro">URL Imagem de Capa do Livro</string>
+    <string name="titulo_sucesso">Sucesso!</string>
+    <string name="corpo_sucesso">Mensagem para contato enviada com sucesso</string>
+    <string name="btn_sucesso">Próximo</string>
 
 
     >>>>>>> dec5bdf35bf42ca1c936243bdc881c9138a3045d
