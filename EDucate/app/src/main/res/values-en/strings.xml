@@ -196,5 +196,16 @@
     <string name="mensagem_explicativa_erro">Please try again later. If the problem persists, please contact our support.</string>
     <string name="btn_voltar_tela_erro">Come back</string>
     <string name="mensagem_nao">Oh no!</string>
-    <string name="mensagem_errado">Looks like something went wrong</string>
+    <string name="mensagem_biblio_erro">Oh no!</string>
+    <string name="mensagem_biblio_erro_dois">Looks like something went wrong when registering your library, but rest assured.</string>
+    <string name="mensagem_errado">It seems that something went wrong when registering your user, but rest assured.</string>
+    <string name="mensagem_contato_erro">Oh no!</string>
+    <string name="mensagem_contato_dois">Looks like something went wrong sending your contact to us, but rest assured.
+</string>
+    <string name="mensagem_livro_erro">Oh no!</string>
+    <string name="mensagem_livro_erro_dois">Looks like something went wrong adding your books, but rest assured.</string>
+    <string name="mensagem_editar_perfil_erro">Oh no!</string>
+    <string name="mensagem_editar_perfil_erro_dois">It looks like something went wrong when updating your profile, but rest assured.</string>
+    <string name="mensagem_editar_perfil_erro_biblio">Oh no!</string>
+    <string name="mensagem_editar_perfil_erro_dois_biblio">It looks like something went wrong updating your library profile, but rest assured.</string>
 </resources>

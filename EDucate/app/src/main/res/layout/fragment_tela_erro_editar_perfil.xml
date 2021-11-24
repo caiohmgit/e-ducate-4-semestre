@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaErroEditarPerfilFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="411dp"
+            android:layout_height="222dp"
+            android:background="#FFFFF"
+            android:orientation="vertical">
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_form_contato"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/exo2_bold"
+                android:letterSpacing="0.06"
+                android:text="@string/mensagem_editar_perfil_erro"
+                android:textAlignment="center"
+                android:textColor="@color/laranja_padrao"
+                android:textSize="33sp" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/exo2_regular"
+                android:text="@string/mensagem_editar_perfil_erro_dois"
+                android:textAlignment="center"
+                android:textColor="@color/laranja_padrao"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/exo2_regular"
+                android:text="@string/mensagem_explicativa_erro"
+                android:textAlignment="center"
+                android:textColor="@color/cinza_padrao"
+                android:textSize="20sp" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/botao_redondo_laranja"
+                android:fontFamily="@font/exo2_regular"
+                android:text="@string/btn_voltar_tela_erro"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/ic_circle_close_red" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/ic_close" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

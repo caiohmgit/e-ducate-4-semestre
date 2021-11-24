@@ -228,13 +228,29 @@
     <string name="hint_comentario_avaliacao">Deixe um comentário (Opcional)</string>
     <string name="btn_avaliar">Avaliar</string>
 
-<<<<<<< HEAD
+    *
     <!--    Tela de erro-->
-<string name="mensagem_explicativa_erro">Tente novamente mais tarde.Se o problema continuar, entre em contato com o nosso suporte.</string>
-<string name="btn_voltar_tela_erro">Voltar</string>
-    <string name="mensagem_nao">Oh não!</string>
-    <string name="mensagem_errado">Parece que algo deu errado</string>
-=======
+    <string name="mensagem_explicativa_erro">Tente novamente mais tarde.Se o problema continuar, entre em contato com o nosso suporte.</string>
+    <string name="btn_voltar_tela_erro">Voltar</string>
+    <string name="mensagem_nao"></string>
+    <string name="mensagem_errado">Parece que algo deu errado ao cadastrar seu usuário, mas fique tranquilo.</string>
+
+    <string name="mensagem_biblio_erro">Oh não!</string>
+    <string name="mensagem_biblio_erro_dois">Parece que algo deu errado ao cadastrar sua biblioteca, mas fique tranquilo.</string>
+
+    <string name="mensagem_contato_erro">Oh não!</string>
+    <string name="mensagem_contato_dois">Parece que algo deu errado ao enviar o seu contato para nós, mas fique tranquilo.</string>
+
+    <string name="mensagem_livro_erro">Oh não!</string>
+    <string name="mensagem_livro_erro_dois">Parece que algo deu errado ao adicionar seus livros, mas fique tranquilo.</string>
+
+    <string name="mensagem_editar_perfil_erro">Oh não!</string>
+    <string name="mensagem_editar_perfil_erro_dois">Parece que deu algo errado ao atualizar seu perfil, mas fique tranquilo.</string>
+
+    <string name="mensagem_editar_perfil_erro_biblio">Oh não!</string>
+    <string name="mensagem_editar_perfil_erro_dois_biblio">Parece que deu algo errado ao atualizar o perfil da sua biblioteca, mas fique tranquilo.</string>
+
+    =======
 
     <string name="dados_pessoais">Dados Pessoais</string>
     <string name="se_atente_ao_que_pede">Se atente ao que pede e preencha adequadamente os campos.</string>
@@ -270,5 +286,5 @@
     <string name="url_imagem_capa_livro">URL Imagem de Capa do Livro</string>
 
 
->>>>>>> dec5bdf35bf42ca1c936243bdc881c9138a3045d
+    >>>>>>> dec5bdf35bf42ca1c936243bdc881c9138a3045d
 </resources>
