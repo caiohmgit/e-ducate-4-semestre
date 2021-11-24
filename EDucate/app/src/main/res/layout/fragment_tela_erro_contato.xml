@@ -15,7 +15,7 @@
             android:id="@+id/rl_header"
             android:layout_width="411dp"
             android:layout_height="222dp"
-            android:background="#FFFFF"
+            android:background="#FFFFFF"
             android:orientation="vertical">
 
         </RelativeLayout>
