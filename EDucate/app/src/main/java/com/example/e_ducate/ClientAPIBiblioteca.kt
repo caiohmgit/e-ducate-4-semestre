@@ -1,7 +1,9 @@
 package com.example.e_ducate
 
 import retrofit2.Call
+import retrofit2.http.Body
 import retrofit2.http.GET
+import retrofit2.http.POST
 import retrofit2.http.Path
 
 interface ClientAPIBiblioteca {
@@ -17,5 +19,8 @@ interface ClientAPIBiblioteca {
 
     @GET("/user/usuario/{id}")
     fun getUsuario(@Path("id") id:Int): Call<Usuario>
+
+    @POST("asasas")
+    fun postBiblioteca(@Body biblioteca: Biblioteca): Call<Void>
 
 }

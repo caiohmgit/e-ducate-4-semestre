@@ -60,6 +60,7 @@ class LivrosEmDestaqueFragment : Fragment() {
 
                         val params = Bundle()
                         params.putSerializable("livro", it)
+                        params.putSerializable("biblioteca", biblioteca)
 
 
                         val fragment = LivroDestaqueFragment()
