@@ -10,13 +10,21 @@ class CadastroBiblio1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_biblio1)
+
+
+        val buttonCadastrar : Button = findViewById(R.id.btn_cadastrar_biblio)
+        buttonCadastrar.setOnClickListener {
+            finish()
+            startActivity(Intent(this, MenuBarAdm::class.java))
+        }
+
+        val buttonFechar : Button = findViewById(R.id.btn_fechar)
+        buttonFechar.setOnClickListener {
+            finish()
+            startActivity(Intent(this, Login::class.java))
+        }
     }
 
-
-    fun irTelaCadastro2(v: View) {
-
-        startActivity(Intent(this,CadastroBiblio2::class.java))
-    }
 
 
     //    Primeira linha se seleção
@@ -98,5 +106,8 @@ class CadastroBiblio1 : AppCompatActivity() {
 
         btn_compra_livros.isSelected = !btn_compra_livros.isSelected
     }
+
+
+
 
 }

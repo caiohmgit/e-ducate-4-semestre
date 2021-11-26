@@ -38,7 +38,7 @@ class LivrosEmDestaqueFragment : Fragment() {
             findNavController().navigate(R.id.library_visualization)
         })
 
-        val biblioteca:Biblioteca = arguments?.getSerializable("dados") as Biblioteca
+        val biblioteca:Biblioteca = arguments?.getSerializable("biblioteca") as Biblioteca
 
         val nomeBiblioteca:TextView = root.findViewById(R.id.nome_biblioteca)
 
