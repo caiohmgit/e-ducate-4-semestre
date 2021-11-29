@@ -6,10 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.Toast
+import android.widget.*
 import androidx.navigation.fragment.findNavController
 import com.example.e_ducate.databinding.FragmentPesquisaBibliotecasBinding
 import com.example.e_ducate.databinding.FragmentVisualizacaoMainBibliotecaBinding
@@ -35,6 +32,12 @@ class PesquisaBibliotecasFragment : Fragment() {
         _binding = FragmentPesquisaBibliotecasBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        val etPesquisa :EditText = root.findViewById(R.id.et_pesquisa_bibliotecas)
+        val termoPesquisado : String = etPesquisa.text.toString()
+
+        val tvResultadoBusca :TextView = root.findViewById(R.id.frase_resultado_pesquisa)
+
+        val mensagemResultado = "Resultado para busca de $termoPesquisado"
 
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar)
         buttonFechar.setOnClickListener(View.OnClickListener {
@@ -43,6 +46,8 @@ class PesquisaBibliotecasFragment : Fragment() {
 
         val buttonBuscar: ImageView = root.findViewById(R.id.btn_buscar)
         buttonBuscar.setOnClickListener {
+
+            tvResultadoBusca.text = mensagemResultado
             val resultadoBusca: LinearLayout = root.findViewById(R.id.ll_resultado_busca_bibliotecas)
             resultadoBusca.removeAllViews()
 

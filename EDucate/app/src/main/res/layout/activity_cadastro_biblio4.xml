@@ -43,6 +43,15 @@
                 android:textSize="48sp" />
         </RelativeLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -143,7 +152,6 @@
                 android:background="@drawable/custom_orange_defaut_button"
                 android:drawableEnd="@drawable/ic_check"
                 android:drawablePadding="12dp"
-                android:onClick="irTelaPrincipalBiblio"
                 />
 
             <TextView
@@ -160,6 +168,8 @@
                 android:onClick="fechar"
 
                 />
+
+        </LinearLayout>
 
 
         </LinearLayout>
