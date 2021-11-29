@@ -287,7 +287,9 @@
     <string name="titulo_sucesso">Sucesso!</string>
     <string name="corpo_sucesso">Mensagem para contato enviada com sucesso</string>
     <string name="btn_sucesso">Próximo</string>
-
-
-    >>>>>>> dec5bdf35bf42ca1c936243bdc881c9138a3045d
+    <string name="corpo_sucesso_redefinicao_senha">Nova solicitação de senha enviada. Confira seu e-mail para redefinir sua senha</string>
+    <string name="corpo_sucesso_cadastro">O cadastro foi realizado com sucesso.</string>
+    <string name="corpo_sucesso_livro_deletado">O livro foi deletado com sucesso!</string>
+    <string name="corpo_sucesso_biblioteca_cadastrada">Sua Biblioteca foi cadastrada no com sucesso. Agora é só aproveitar as funcionalidades do E-Ducate para administrar seu estabelecimento!</string>
+    <string name="corpo_sucesso_solicitacao_administrador">Sua solicitação para se tornar um admistrador no E-Ducate foi enviada com sucesso, em breve receberá um e-mail com um novo usuário e senha caso esteja apto a administrar uma biblioteca.</string>
 </resources>

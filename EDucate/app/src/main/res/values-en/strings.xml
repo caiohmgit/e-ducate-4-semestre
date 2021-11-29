@@ -208,4 +208,12 @@
     <string name="mensagem_editar_perfil_erro_dois">It looks like something went wrong when updating your profile, but rest assured.</string>
     <string name="mensagem_editar_perfil_erro_biblio">Oh no!</string>
     <string name="mensagem_editar_perfil_erro_dois_biblio">It looks like something went wrong updating your library profile, but rest assured.</string>
+    <string name="titulo_sucesso">Success!</string>
+    <string name="corpo_sucesso">Message to contact send successfully</string>
+    <string name="btn_sucesso">Next</string>
+    <string name="corpo_sucesso_redefinicao_senha">New password request send. Check your e-mail to reset your password</string>
+    <string name="corpo_sucesso_cadastro">The registration was successful.</string>
+    <string name="corpo_sucesso_livro_deletado">The book was deleted successfully!</string>
+    <string name="corpo_sucesso_biblioteca_cadastrada">Your Library has been successfully registered with. Now just take advantage of E-Ducate's features to manage your establishment!</string>
+    <string name="corpo_sucesso_solicitacao_administrador">Your application to become an E-Ducate administrator has been sent successfully, you will soon receive an email with a new username and password if you are able to manage a library.</string>
 </resources>

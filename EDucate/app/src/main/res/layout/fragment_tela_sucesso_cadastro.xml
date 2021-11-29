@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaSucessoCadastroFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_form_contato"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo2_bold"
+                    android:text="@string/titulo_sucesso"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#7ACC6D"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo2_light"
+                    android:text="@string/corpo_sucesso_cadastro"
+                    android:textSize="25sp"
+                    android:layout_marginTop="60dp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/custom_button_sucesso"
+                    android:fontFamily="@font/exo2_regular"
+                    android:onClick="fechar"
+                    android:text="@string/btn_sucesso"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/img_success" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
