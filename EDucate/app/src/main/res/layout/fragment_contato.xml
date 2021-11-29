@@ -73,7 +73,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/exo2_medium"
                         android:hint="@string/ex_primeiro_nome_contato"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:id="@+id/et_primeiro_nome"/>
 
                 </LinearLayout>
 
@@ -96,7 +97,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/exo2_medium"
                         android:hint="@string/ex_ultimo_nome_contato"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:id="@+id/et_ultimo_nome"/>
 
                 </LinearLayout>
 
@@ -122,7 +124,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/exo2_medium"
                     android:hint="@string/ex_email_contato"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:id="@+id/et_email_contato"/>
 
             </LinearLayout>
 
@@ -145,7 +148,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/exo2_medium"
                     android:hint="@string/ex_nro_celular_contato"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:id="@+id/et_numero_telefone"/>
 
             </LinearLayout>
 
@@ -169,7 +173,8 @@
                     android:layout_height="100dp"
                     android:fontFamily="@font/exo2_medium"
                     android:hint="@string/ex_mensagem_contato"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:id="@+id/et_mensagem_contato"/>
 
                 <Button
                     android:layout_width="match_parent"
