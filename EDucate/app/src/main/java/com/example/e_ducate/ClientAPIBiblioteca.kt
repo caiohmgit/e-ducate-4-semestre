@@ -23,4 +23,7 @@ interface ClientAPIBiblioteca {
     @POST("asasas")
     fun postBiblioteca(@Body biblioteca: Biblioteca): Call<Void>
 
+    @POST("/contato/{id}")
+    fun postContato(@Path("id") id: Int) : Call<Contato>
+
 }
