@@ -8,8 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.e_ducate.databinding.FragmentAjudaBinding
 import com.example.e_ducate.databinding.FragmentPerfilBinding
@@ -39,6 +39,8 @@ class PerfilFragment : Fragment() {
         _binding = FragmentPerfilBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        val usuario:Usuario = arguments?.getSerializable("usuario") as Usuario
+
 
         val nomeUsuario: TextView = root.findViewById(R.id.nome_usuario)
         val emailUsuario: TextView = root.findViewById(R.id.email_usuario)
@@ -62,43 +64,84 @@ class PerfilFragment : Fragment() {
 
         val clientAPIBiblioteca = ClientRest.criarClientBiblioteca()
 
-        clientAPIBiblioteca?.getUsuario(1)?.enqueue(object :
-            Callback<Usuario> {
-            override fun onResponse(
-                call: Call<Usuario>,
-                response: Response<Usuario>
-            ) {
-                if (response.isSuccessful) {
-                    nomeUsuario.text = response.body()?.nome
-                    emailUsuario.text = response.body()?.email
-                    telefoneUsuario.text = response.body()?.telefone
+        if (usuario == null) {
+            clientAPIBiblioteca?.getUsuario(1)?.enqueue(object :
+                Callback<Usuario> {
+                override fun onResponse(
+                    call: Call<Usuario>,
+                    response: Response<Usuario>
+                ) {
+                    if (response.isSuccessful) {
+                        nomeUsuario.text = response.body()?.nome
+                        emailUsuario.text = response.body()?.email
+                        telefoneUsuario.text = response.body()?.telefone
 
 
-                    if (response.body()?.urlPerfil != null) {
-                        if (response.body()?.urlPerfil!!.contains("https")) {
-                            Picasso.with(root.context).load(response.body()?.urlPerfil).into(urlPerfilUsuario)
+                        if (response.body()?.urlPerfil != null) {
+                            if (response.body()?.urlPerfil!!.contains("https")) {
+                                Picasso.with(root.context).load(response.body()?.urlPerfil).into(urlPerfilUsuario)
+                            } else {
+                                Picasso.with(root.context).load(response.body()?.urlPerfil?.replace("http", "https")).into(urlPerfilUsuario);
+                            }
+
                         } else {
-                            Picasso.with(root.context).load(response.body()?.urlPerfil?.replace("http", "https")).into(urlPerfilUsuario);
+                            Picasso.with(root.context).load("https://hospitalevandroribeiro.com.br/images/no-photo.png").into(urlPerfilUsuario);
                         }
 
-                    } else {
-                        Picasso.with(root.context).load("https://hospitalevandroribeiro.com.br/images/no-photo.png").into(urlPerfilUsuario);
-                    }
+                        params.putSerializable("usuario", response.body())
 
-                    params.putSerializable("usuario", response.body())
+                    }
 
                 }
 
-            }
 
-
-
-            override fun onFailure(call: Call<Usuario>, t: Throwable) {
+                override fun onFailure(call: Call<Usuario>, t: Throwable) {
                     Log.e("API Biblioteca", t.message!!)
-//                    Toast.makeText(context, "Erro na chamada da API", Toast.LENGTH_SHORT).show()
-            }
+                    //                    Toast.makeText(context, "Erro na chamada da API", Toast.LENGTH_SHORT).show()
+                }
 
-        })
+            })
+        } else {
+            clientAPIBiblioteca?.getUsuario(usuario.id)?.enqueue(object :
+                Callback<Usuario> {
+                override fun onResponse(
+                    call: Call<Usuario>,
+                    response: Response<Usuario>
+                ) {
+                    if (response.isSuccessful) {
+                        nomeUsuario.text = response.body()?.nome
+                        emailUsuario.text = response.body()?.email
+                        telefoneUsuario.text = response.body()?.telefone
+
+
+                        if (response.body()?.urlPerfil != null) {
+                            if (response.body()?.urlPerfil!!.contains("https")) {
+                                Picasso.with(root.context).load(response.body()?.urlPerfil).into(urlPerfilUsuario)
+                            } else {
+                                Picasso.with(root.context).load(response.body()?.urlPerfil?.replace("http", "https")).into(urlPerfilUsuario);
+                            }
+
+                        } else {
+                            Picasso.with(root.context).load("https://hospitalevandroribeiro.com.br/images/no-photo.png").into(urlPerfilUsuario);
+                        }
+
+                        params.putSerializable("usuario", response.body())
+
+                    }
+
+                }
+
+
+                override fun onFailure(call: Call<Usuario>, t: Throwable) {
+                    Log.e("API Biblioteca", t.message!!)
+                    //                    Toast.makeText(context, "Erro na chamada da API", Toast.LENGTH_SHORT).show()
+                }
+
+            })
+        }
+
+
+
 
 
 

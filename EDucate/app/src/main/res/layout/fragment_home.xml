@@ -29,18 +29,18 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/exo2_bold"
-                android:text="@string/bem_vindo"
+                android:text="@string/educate"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
-                android:textSize="30sp" />
+                android:textSize="32sp" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="70dp"
                 android:fontFamily="@font/exo2_bold"
-                android:text="@string/primeiro_nome_usuario"
+                android:text="@string/bem_vindo"
                 android:textAllCaps="true"
                 android:textColor="#FFCDB8"
                 android:textSize="23sp" />

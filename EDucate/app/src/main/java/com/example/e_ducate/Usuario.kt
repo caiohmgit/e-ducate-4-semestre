@@ -2,11 +2,13 @@ package com.example.e_ducate
 
 import java.io.Serializable
 
-data class Usuario(val nome:String,
-                   val email:String,
+data class Usuario(
+                    val id:Int,
+                    var nome:String,
+                   var email:String,
                    val senha:String,
-                   val telefone:String,
+                   var telefone:String,
                    val isADM:Boolean,
-                   val urlPerfil:String?
+                   var urlPerfil:String?
                     ):Serializable {
 }

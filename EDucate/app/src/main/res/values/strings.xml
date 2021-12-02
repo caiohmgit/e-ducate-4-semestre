@@ -179,7 +179,7 @@
 
     <!--    Main Screen User-->
 
-    <string name="bem_vindo">Bem Vindo(a),</string>
+    <string name="bem_vindo">Seja Bem Vindo(a),</string>
     <string name="primeiro_nome_usuario">Amanda</string>
     <string name="bibliotecas_recomendadas">Bibliotecas Recomendadas</string>
     <string name="biblioteca_publica">Biblioteca Pública</string>
@@ -274,16 +274,16 @@
     <string name="menu_slideshow" translatable="false">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
-    <string name="minha_biblioteca" translatable="false">Minha Biblioteca</string>
-    <string name="livros_em_destaque" translatable="false">Livros em destaque</string>
-    <string name="nome_livro_setado" translatable="false">Harry Potter e a câmara secreta</string>
-    <string name="autor_setado_livro" translatable="false">E. Lockhart</string>
+    <string name="minha_biblioteca">Minha Biblioteca</string>
+    <string name="livros_em_destaque">Livros em destaque</string>
+    <string name="nome_livro_setado">Harry Potter e a câmara secreta</string>
+    <string name="autor_setado_livro">E. Lockhart</string>
     <string name="genero_setado_livro" translatable="false">Aventura</string>
     <string name="btn_voltar_aos_livros" translatable="false">Voltar aos Livros em Destaque</string>
-    <string name="btn_excluir_livro" translatable="false">Excluir Livro</string>
-    <string name="btn_retornar" translatable="false">Retornar</string>
+    <string name="btn_excluir_livro">Excluir Livro</string>
+    <string name="btn_retornar">Retornar</string>
     <string name="ex_url_imagem_capa_livro" translatable="false">Ex. https://capa-livro.com</string>
-    <string name="url_imagem_capa_livro" translatable="false">URL Imagem de Capa do Livro</string>
+    <string name="url_imagem_capa_livro">URL Imagem de Capa do Livro</string>
     <string name="titulo_sucesso">Sucesso!</string>
     <string name="corpo_sucesso">Mensagem para contato enviada com sucesso</string>
     <string name="btn_sucesso">Próximo</string>
@@ -292,4 +292,5 @@
     <string name="corpo_sucesso_livro_deletado">O livro foi deletado com sucesso!</string>
     <string name="corpo_sucesso_biblioteca_cadastrada">Sua Biblioteca foi cadastrada no com sucesso. Agora é só aproveitar as funcionalidades do E-Ducate para administrar seu estabelecimento!</string>
     <string name="corpo_sucesso_solicitacao_administrador">Sua solicitação para se tornar um admistrador no E-Ducate foi enviada com sucesso, em breve receberá um e-mail com um novo usuário e senha caso esteja apto a administrar uma biblioteca.</string>
+    <string name="educate">E-Ducate</string>
 </resources>

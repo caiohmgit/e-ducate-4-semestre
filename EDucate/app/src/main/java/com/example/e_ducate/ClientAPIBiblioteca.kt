@@ -21,18 +21,21 @@ interface ClientAPIBiblioteca {
     fun getBiblioteca(@Path("id") id:Int): Call<Biblioteca>
 
     @GET("user/usuario/{id}")
-    fun getUsuario(@Path("id") id:Int): Call<Usuario>
+    fun getUsuario(@Path("id") id: Int): Call<Usuario>
 
     @POST("asasas")
     fun postBiblioteca(@Body biblioteca: Biblioteca): Call<Void>
 
     @POST("contato/{id}")
-    fun postContato(@Path("id") id: Int) : Call<Contato>
+    fun postContato(@Path("id") id: Int, @Body contato: Contato) : Call<Contato>
+
+    @PUT("user/usuario/{id}")
+    fun putUsuario(@Path("id") id: Int, @Body usuario: Usuario) : Call<Usuario>
 
     // Acesso usuario
     @Headers("Content-Type:application/json")
     @POST("/sistema/sessao/login")
-    fun signin(@Body info: SignInBody): retrofit2.Call<ResponseBody>
+    fun signin(@Body loginForm: SignInBody): Call<Sessao>
 
     @Headers("Content-Type:application/json")
     @POST("/sistema/user/usuario")

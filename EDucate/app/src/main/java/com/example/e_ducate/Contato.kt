@@ -2,7 +2,7 @@ package com.example.e_ducate
 
 import java.io.Serializable
 
-data class Contato (val id:Int,
+data class Contato (
                       val firstName:String,
                       val lastName:String,
                       val email:String,

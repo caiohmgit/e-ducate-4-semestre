@@ -38,6 +38,10 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.pesquisa_bibliotecas)
         })
 
+//        val nomeUsuario:TextView = root.findViewById(R.id.nome_usuario)
+
+
+
 
         val resultadoBusca: LinearLayout = root.findViewById(R.id.ll_bibliotecas_recomendadas)
         resultadoBusca.removeAllViews()

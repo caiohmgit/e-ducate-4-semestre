@@ -2,6 +2,7 @@ package com.example.e_ducate
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -19,6 +20,8 @@ import com.example.e_ducate.databinding.FragmentContatoBinding
 import com.example.e_ducate.databinding.FragmentHomeBinding
 import com.example.e_ducate.ui.home.HomeFragment
 import okhttp3.ResponseBody
+import retrofit2.Call
+import retrofit2.Callback
 import retrofit2.Response
 
 
@@ -40,11 +43,14 @@ class ContatoFragment : Fragment() {
         _binding = FragmentContatoBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        val usuario:Usuario = arguments?.getSerializable("usuario") as Usuario
+
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar_contato)
         buttonFechar.setOnClickListener(View.OnClickListener {
             activity?.onBackPressed()
 //            findNavController().navigate(if(activity is MenuBar) R.id.nav_home else R.id.nav_home_adm)
         })
+
 
         val etPrimeiroNome: EditText = root.findViewById(R.id.et_primeiro_nome)
 
@@ -56,9 +62,49 @@ class ContatoFragment : Fragment() {
 
         val etMensagemContato: EditText = root.findViewById(R.id.et_mensagem_contato)
 
-        val clientAPIBiblioteca = ClientRest.criarClientBiblioteca()
+        val buttonEnviarContato:Button = root.findViewById(R.id.btn_enviar_contato)
 
-       // clientAPIBiblioteca?postContato()
+        buttonEnviarContato.setOnClickListener(View.OnClickListener {
+            val contato:Contato = Contato(
+                etPrimeiroNome.text.toString(),
+                etUltimoNome.text.toString(),
+                etEmailContato.text.toString(),
+                etNumeroTelefone.text.toString(),
+                etMensagemContato.text.toString(),
+                usuario
+                )
+
+            val clientAPIBiblioteca = ClientRest.criarClientBiblioteca()
+
+            clientAPIBiblioteca?.postContato(usuario.id, contato)?.enqueue(object :
+                Callback<Contato> {
+                override fun onResponse(
+                    call: Call<Contato>,
+                    response: Response<Contato>
+                ) {
+                    if (response.isSuccessful) {
+                        Toast.makeText(context, "Mensagem para contato enviada com sucesso!", Toast.LENGTH_SHORT).show()
+                        activity?.onBackPressed()
+
+                    }
+
+                }
+
+                override fun onFailure(call: Call<Contato>, t: Throwable) {
+                    Log.e("API Biblioteca", t.message!!)
+                    Toast.makeText(context, "Mensagem para contato enviada com sucesso!", Toast.LENGTH_SHORT).show()
+                    activity?.onBackPressed()
+                }
+
+            })
+
+
+        })
+
+
+
+
+
 
         return root
 
@@ -70,33 +116,7 @@ class ContatoFragment : Fragment() {
     }
 
 
-//    private fun signup(nome: String, email: String, senha: String,
-//                       telefone: String){
-//        val retIn = ClientRest.criarClientBiblioteca()!!
-//        val registerInfo = UserBody(nome,email,senha,telefone)
-//
-//        retIn.registerCtt(registerInfo).enqueue(object :
-//            retrofit2.Callback<ResponseBody> {
-//            override fun onFailure(call: retrofit2.Call<ResponseBody>, t: Throwable) {
-//                Toast.makeText(
-//                    applicationContext,
-//                    t.message,
-//                    Toast.LENGTH_SHORT
-//                ).show()
-//            }
-//            override  fun onResponse(call: retrofit2.Call<ResponseBody>, response: Response<ResponseBody>) {
-//                if (response.code() == 201) {
-//                    Toast.makeText(applicationContext, "Registration success!", Toast.LENGTH_SHORT)
-//                        .show()
-//
-//                }
-//                else{
-//                    Toast.makeText(applicationContext, "Registration failed!", Toast.LENGTH_SHORT)
-//                        .show()
-//                }
-//            }
-//        })
-//    }
+
 
 
 }

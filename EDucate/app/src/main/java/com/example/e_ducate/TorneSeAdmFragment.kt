@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.e_ducate.databinding.FragmentAjudaBinding
 import com.example.e_ducate.databinding.FragmentTorneSeAdmBinding
@@ -33,6 +34,11 @@ class TorneSeAdmFragment : Fragment() {
         val buttonCancelar: Button = root.findViewById(R.id.btn_cancelar)
         buttonCancelar.setOnClickListener(View.OnClickListener {
             activity?.onBackPressed()
+        })
+
+        val buttonEnviar: Button = root.findViewById(R.id.btn_enviar_solicitacao)
+        buttonEnviar.setOnClickListener(View.OnClickListener {
+            Toast.makeText(context, "Funcionalidade em desenvolvimento!", Toast.LENGTH_SHORT).show()
         })
 
 

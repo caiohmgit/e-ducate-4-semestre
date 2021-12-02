@@ -1,6 +1,7 @@
 package com.example.e_ducate
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -8,10 +9,14 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.e_ducate.databinding.FragmentEditarPerfilBinding
 import com.example.e_ducate.databinding.FragmentPerfilBinding
 import com.squareup.picasso.Picasso
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 
 class EditarPerfilFragment : Fragment() {
@@ -48,10 +53,10 @@ class EditarPerfilFragment : Fragment() {
         etUrlImagemUsuario.setText(usuario.urlPerfil)
 
         if (usuario.urlPerfil != null) {
-            if (usuario.urlPerfil.contains("https")) {
+            if (usuario.urlPerfil!!.contains("https")) {
                 Picasso.with(root.context).load(usuario.urlPerfil).into(urlPerfilUsuario)
             } else {
-                Picasso.with(root.context).load(usuario.urlPerfil.replace("http", "https")).into(urlPerfilUsuario);
+                Picasso.with(root.context).load(usuario.urlPerfil!!.replace("http", "https")).into(urlPerfilUsuario);
             }
 
         } else {
@@ -66,10 +71,44 @@ class EditarPerfilFragment : Fragment() {
             activity?.onBackPressed()
         })
 
-        val buttonIrTelaPerfil: Button = root.findViewById(R.id.btn_salvar_informacoes_perfil)
-        buttonIrTelaPerfil.setOnClickListener(View.OnClickListener {
-            activity?.onBackPressed()
+        val buttonAtualizarInformacoesPerfil: Button = root.findViewById(R.id.btn_salvar_informacoes_perfil)
+        buttonAtualizarInformacoesPerfil.setOnClickListener(View.OnClickListener {
+
+
+            usuario.nome = etNomeUsuario.text.toString()
+            usuario.email = etEmailUsuario.text.toString()
+            usuario.telefone = etTelefoneUsuario.text.toString()
+            usuario.urlPerfil = etUrlImagemUsuario.text.toString()
+
+            val clientAPIBiblioteca = ClientRest.criarClientBiblioteca()
+
+            clientAPIBiblioteca?.putUsuario(usuario.id, usuario)?.enqueue(object :
+                Callback<Usuario> {
+                override fun onResponse(
+                    call: Call<Usuario>,
+                    response: Response<Usuario>
+                ) {
+                    if (response.isSuccessful) {
+                        Toast.makeText(context, "Informações do perfil atualizadas com sucesso!", Toast.LENGTH_SHORT).show()
+                        activity?.onBackPressed()
+
+                    }
+
+                }
+
+                override fun onFailure(call: Call<Usuario>, t: Throwable) {
+                    Log.e("API Biblioteca", t.message!!)
+                    Toast.makeText(context, "Informações do perfil atualizadas com sucesso!", Toast.LENGTH_SHORT).show()
+                    activity?.onBackPressed()
+                }
+
+            })
+
+
+
         })
+
+
 
 
         return root

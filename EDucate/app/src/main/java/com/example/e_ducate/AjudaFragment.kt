@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.e_ducate.databinding.FragmentAjudaBinding
 import com.example.e_ducate.databinding.FragmentContatoBinding
 import android.widget.Button
+import android.widget.Toast
 
 
 class AjudaFragment : Fragment() {
@@ -41,7 +42,7 @@ class AjudaFragment : Fragment() {
 
         val buttonAjuda: Button = root.findViewById(R.id.btn_ajuda)
         buttonAjuda.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.library_visualization)
+            Toast.makeText(context, "Funcionalidade em desenvolvimento!", Toast.LENGTH_SHORT).show()
         })
 
 
