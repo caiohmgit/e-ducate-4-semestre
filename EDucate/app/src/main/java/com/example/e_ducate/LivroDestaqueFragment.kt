@@ -52,7 +52,7 @@ class LivroDestaqueFragment : Fragment() {
                 Picasso.with(view.context).load(livro.urlCapaLivro?.replace("http", "https")).into(imgLivro);
             }
         } else {
-            Picasso.with(view.context).load("https://www.colunaitalo.com.br/upload/noticias/2243/capa_destaque_2_view.jpg").into(imgLivro);
+            Picasso.with(view.context).load("https://i.pinimg.com/236x/b4/9e/7a/b49e7a7298b855f8bf2cd3f5923ea7ab.jpg").into(imgLivro);
         }
 
 

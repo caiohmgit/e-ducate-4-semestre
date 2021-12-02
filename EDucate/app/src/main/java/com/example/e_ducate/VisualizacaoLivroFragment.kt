@@ -63,12 +63,12 @@ class VisualizacaoLivroFragment : Fragment() {
 
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar)
         buttonFechar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.livros_em_destaque)
+            activity?.onBackPressed()
         })
 
         val buttonVoltarTelaLivros: Button = root.findViewById(R.id.btn_voltar_aos_livros)
         buttonVoltarTelaLivros.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.livros_em_destaque)
+            activity?.onBackPressed()
         })
 
         return root

@@ -34,7 +34,8 @@ class AjudaFragment : Fragment() {
 
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar_ajuda)
         buttonFechar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(if(activity is MenuBar) R.id.nav_home else R.id.nav_home_adm)
+            activity?.onBackPressed()
+//            findNavController().navigate(if(activity is MenuBar) R.id.nav_home else R.id.nav_home_adm)
 
         })
 

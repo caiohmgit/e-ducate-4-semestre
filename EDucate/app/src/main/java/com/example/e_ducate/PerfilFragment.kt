@@ -46,7 +46,7 @@ class PerfilFragment : Fragment() {
 
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar_perfil)
         buttonFechar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(if(activity is MenuBar) R.id.nav_home else R.id.nav_home_adm)
+            activity?.onBackPressed()
 
         })
 
@@ -81,7 +81,7 @@ class PerfilFragment : Fragment() {
                         }
 
                     } else {
-                        Picasso.with(root.context).load("https://www.google.com/url?sa=i&url=https%3A%2F%2Fvoxnews.com.br%2Ftwitter-muda-imagem-padrao-de-perfis-sem-foto%2F&psig=AOvVaw2Ge0oL9r0lLwl1aaHpMEQx&ust=1636755132248000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMCYvZaqkfQCFQAAAAAdAAAAABAJ").into(urlPerfilUsuario);
+                        Picasso.with(root.context).load("https://hospitalevandroribeiro.com.br/images/no-photo.png").into(urlPerfilUsuario);
                     }
 
                     params.putSerializable("usuario", response.body())

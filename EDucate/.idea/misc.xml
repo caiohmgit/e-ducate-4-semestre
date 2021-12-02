@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Alexandre/REPOSITORIO_EDDUCATE/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/custom_search_biblio_item.xml" value="0.140625" />
+        <entry key="..\:/Alexandre/REPOSITORIO_EDDUCATE/e-ducate-4-semestre/EDucate/app/src/main/res/layout/activity_menu_bar.xml" value="0.16197916666666667" />
+        <entry key="..\:/Alexandre/REPOSITORIO_EDDUCATE/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_avaliar_biblioteca.xml" value="0.1" />
+        <entry key="..\:/Alexandre/REPOSITORIO_EDDUCATE/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_biblioteca_pesquisa.xml" value="0.12135416666666667" />
+        <entry key="..\:/Alexandre/REPOSITORIO_EDDUCATE/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_biblioteca_recomendada.xml" value="0.3333333333333333" />
+        <entry key="..\:/Alexandre/REPOSITORIO_EDDUCATE/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_editar_perfil.xml" value="0.16197916666666667" />
+        <entry key="..\:/Alexandre/REPOSITORIO_EDDUCATE/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_livro_destaque.xml" value="0.12447916666666667" />
+        <entry key="..\:/Alexandre/REPOSITORIO_EDDUCATE/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_livros_em_destaque.xml" value="0.16197916666666667" />
+        <entry key="..\:/Alexandre/REPOSITORIO_EDDUCATE/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_perfil.xml" value="0.1" />
+        <entry key="..\:/Alexandre/REPOSITORIO_EDDUCATE/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_pesquisa_bibliotecas.xml" value="0.1" />
+        <entry key="..\:/Alexandre/REPOSITORIO_EDDUCATE/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_torne_se_adm.xml" value="0.16197916666666667" />
+        <entry key="..\:/Alexandre/REPOSITORIO_EDDUCATE/e-ducate-4-semestre/EDucate/app/src/main/res/layout/fragment_visualizacao_main_biblioteca.xml" value="0.22" />
         <entry key="..\:/Users/CT225ZJ/OneDrive - EY/Desktop/Faculdade/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/custom_button_enviar_contato.xml" value="0.14629629629629629" />
         <entry key="..\:/Users/CT225ZJ/OneDrive - EY/Desktop/Faculdade/e-ducate-4-semestre/EDucate/app/src/main/res/drawable/custom_button_sucesso.xml" value="0.178125" />
         <entry key="..\:/Users/CT225ZJ/OneDrive - EY/Desktop/Faculdade/e-ducate-4-semestre/EDucate/app/src/main/res/layout/activity_cadastro_biblio1.xml" value="0.14791666666666667" />

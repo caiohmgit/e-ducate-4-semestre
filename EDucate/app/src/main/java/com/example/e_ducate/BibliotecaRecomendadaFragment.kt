@@ -38,15 +38,15 @@ class BibliotecaRecomendadaFragment : Fragment() {
 
 
         val nomeBiblioteca: TextView = view.findViewById(R.id.nome_biblioteca)
-        val enderecoBiblioteca: TextView = view.findViewById(R.id.endereco_biblioteca)
         val notaBiblioteca: TextView = view.findViewById(R.id.nota_biblioteca)
-        val horarioFuncBiblioteca: TextView = view.findViewById(R.id.horario_func_biblioteca)
         val homeOfficeBiblioteca: TextView = view.findViewById(R.id.home_office_biblioteca)
+        val horarioFuncBiblioteca: TextView = view.findViewById(R.id.horario_func_biblioteca)
         val imgBiblioteca: ImageView = view.findViewById(R.id.img_biblioteca)
 
 
         nomeBiblioteca.text = biblioteca.nome
-        enderecoBiblioteca.text = biblioteca.localizacao.nomeRua
+
+        horarioFuncBiblioteca.text = biblioteca.horarioFunc
 
         if (biblioteca.nota != null) {
             notaBiblioteca.text = biblioteca.nota.toString()
@@ -70,7 +70,6 @@ class BibliotecaRecomendadaFragment : Fragment() {
             homeOfficeBiblioteca.text = getString(R.string.nao)
         }
 
-        horarioFuncBiblioteca.text = biblioteca.horarioFunc
 
     }
 

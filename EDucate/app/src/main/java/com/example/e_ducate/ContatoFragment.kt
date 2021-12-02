@@ -38,7 +38,8 @@ class ContatoFragment : Fragment() {
 
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar_contato)
         buttonFechar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(if(activity is MenuBar) R.id.nav_home else R.id.nav_home_adm)
+            activity?.onBackPressed()
+//            findNavController().navigate(if(activity is MenuBar) R.id.nav_home else R.id.nav_home_adm)
         })
 
         val etPrimeiroNome: EditText = root.findViewById(R.id.et_primeiro_nome)

@@ -34,18 +34,20 @@ class VisualizacaoMainBibliotecaFragment : Fragment() {
         _binding = FragmentVisualizacaoMainBibliotecaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        val biblioteca:Biblioteca = arguments?.getSerializable("biblioteca") as Biblioteca
 
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar_tela_biblioteca)
         buttonFechar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.nav_home)
+            activity?.onBackPressed()
         })
 
         val buttonAvaliar: Button = root.findViewById(R.id.btn_avaliar_biblioteca)
         buttonAvaliar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.avaliar_biblioteca)
+            val argumentos = Bundle()
+            argumentos.putSerializable("biblioteca", biblioteca)
+            findNavController().navigate(R.id.avaliar_biblioteca, argumentos)
         })
 
-        val biblioteca:Biblioteca = arguments?.getSerializable("biblioteca") as Biblioteca
 
         val buttonVerLivros: Button = root.findViewById(R.id.btn_ver_livros_da_biblioteca)
         buttonVerLivros.setOnClickListener(View.OnClickListener {

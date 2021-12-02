@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import com.example.e_ducate.databinding.FragmentAjudaBinding
 import com.example.e_ducate.databinding.FragmentAvaliarBibliotecaBinding
@@ -32,16 +33,22 @@ class AvaliarBibliotecaFragment : Fragment() {
         _binding = FragmentAvaliarBibliotecaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        val biblioteca:Biblioteca = arguments?.getSerializable("biblioteca") as Biblioteca
+
 
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar_tela_biblioteca)
         buttonFechar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.library_visualization)
+            activity?.onBackPressed()
         })
 
         val buttonCancelar: Button = root.findViewById(R.id.btn_cancelar)
         buttonCancelar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.library_visualization)
+            activity?.onBackPressed()
         })
+
+        val nomeBiblioteca:TextView = root.findViewById(R.id.nome_biblioteca)
+
+        nomeBiblioteca.text = biblioteca.nome
 
 
 

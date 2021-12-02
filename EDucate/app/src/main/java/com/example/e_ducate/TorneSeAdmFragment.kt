@@ -32,7 +32,7 @@ class TorneSeAdmFragment : Fragment() {
 
         val buttonCancelar: Button = root.findViewById(R.id.btn_cancelar)
         buttonCancelar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.nav_home)
+            activity?.onBackPressed()
         })
 
 

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BibliotecaPesquisaFragment"
     android:id="@+id/fl_biblioteca_pesquisa">
 
@@ -23,7 +24,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
             android:id="@+id/img_biblioteca"
-            shapeAppearanceOverlay="@style/image_seach_biblio_item"
+            app:shapeAppearanceOverlay="@style/image_seach_biblio_item"
             />
 
         <LinearLayout

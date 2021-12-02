@@ -55,7 +55,7 @@ class EditarPerfilFragment : Fragment() {
             }
 
         } else {
-            Picasso.with(root.context).load("https://www.google.com/url?sa=i&url=https%3A%2F%2Fvoxnews.com.br%2Ftwitter-muda-imagem-padrao-de-perfis-sem-foto%2F&psig=AOvVaw2Ge0oL9r0lLwl1aaHpMEQx&ust=1636755132248000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMCYvZaqkfQCFQAAAAAdAAAAABAJ").into(urlPerfilUsuario);
+            Picasso.with(root.context).load("https://hospitalevandroribeiro.com.br/images/no-photo.png").into(urlPerfilUsuario);
         }
 
 
@@ -63,12 +63,12 @@ class EditarPerfilFragment : Fragment() {
 
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar_editar_perfil)
         buttonFechar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.nav_profile)
+            activity?.onBackPressed()
         })
 
-        val buttonIrTelaEditar: Button = root.findViewById(R.id.btn_salvar_informacoes_perfil)
-        buttonIrTelaEditar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.nav_profile)
+        val buttonIrTelaPerfil: Button = root.findViewById(R.id.btn_salvar_informacoes_perfil)
+        buttonIrTelaPerfil.setOnClickListener(View.OnClickListener {
+            activity?.onBackPressed()
         })
 
 

@@ -35,8 +35,9 @@ class LivrosEmDestaqueFragment : Fragment() {
 
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar)
         buttonFechar.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.library_visualization)
+            activity?.onBackPressed()
         })
+
 
         val biblioteca:Biblioteca = arguments?.getSerializable("biblioteca") as Biblioteca
 

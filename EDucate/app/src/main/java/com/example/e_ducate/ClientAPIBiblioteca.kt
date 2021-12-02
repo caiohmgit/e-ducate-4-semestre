@@ -8,22 +8,25 @@ import retrofit2.http.Path
 
 interface ClientAPIBiblioteca {
 
-    @GET("/biblio/bibliotecas")
+    @GET("biblio/bibliotecas")
     fun getBibliotecas(): Call<List<Biblioteca>>
 
-    @GET("/livros/{id}")
+    @GET("biblio/bibliotecas/buscar/{nome}")
+    fun getBibliotecasPesquisa(@Path("nome") nome:String): Call<List<Biblioteca>>
+
+    @GET("livros/{id}")
     fun getLivrosDaBiblioteca(@Path("id") id:Int): Call<List<Livro>>
 
-    @GET("/biblio/biblioteca/{id}")
+    @GET("biblio/biblioteca/{id}")
     fun getBiblioteca(@Path("id") id:Int): Call<Biblioteca>
 
-    @GET("/user/usuario/{id}")
+    @GET("user/usuario/{id}")
     fun getUsuario(@Path("id") id:Int): Call<Usuario>
 
     @POST("asasas")
     fun postBiblioteca(@Body biblioteca: Biblioteca): Call<Void>
 
-    @POST("/contato/{id}")
+    @POST("contato/{id}")
     fun postContato(@Path("id") id: Int) : Call<Contato>
 
 }

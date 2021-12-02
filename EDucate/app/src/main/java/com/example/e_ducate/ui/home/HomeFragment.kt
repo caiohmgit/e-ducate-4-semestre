@@ -10,10 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.example.e_ducate.Biblioteca
-import com.example.e_ducate.BibliotecaPesquisaFragment
-import com.example.e_ducate.ClientRest
-import com.example.e_ducate.R
+import com.example.e_ducate.*
 import com.example.e_ducate.databinding.FragmentHomeBinding
 import retrofit2.Call
 import retrofit2.Callback
@@ -61,7 +58,7 @@ class HomeFragment : Fragment() {
                         params.putSerializable("biblioteca", it)
 
 
-                        val fragment = BibliotecaPesquisaFragment()
+                        val fragment = BibliotecaRecomendadaFragment()
 
                         fragment.arguments = params
                         transaction?.add(R.id.ll_bibliotecas_recomendadas, fragment)

@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BibliotecaRecomendadaFragment"
     android:id="@+id/fl_biblioteca_recomendada">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="385dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
 
@@ -16,12 +18,11 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/img_biblioteca"
-            shapeAppearanceOverlay="@style/image_seach_biblio_item"
+            app:shapeAppearanceOverlay="@style/image_seach_biblio_item"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            android:src="@drawable/bibliotecasesc"
 
             />
 

@@ -33,11 +33,10 @@ class PesquisaBibliotecasFragment : Fragment() {
         val root: View = binding.root
 
         val etPesquisa :EditText = root.findViewById(R.id.et_pesquisa_bibliotecas)
-        val termoPesquisado : String = etPesquisa.text.toString()
 
         val tvResultadoBusca :TextView = root.findViewById(R.id.frase_resultado_pesquisa)
 
-        val mensagemResultado = "Resultado para busca de $termoPesquisado"
+
 
         val buttonFechar: Button = root.findViewById(R.id.btn_fechar)
         buttonFechar.setOnClickListener(View.OnClickListener {
@@ -46,14 +45,12 @@ class PesquisaBibliotecasFragment : Fragment() {
 
         val buttonBuscar: ImageView = root.findViewById(R.id.btn_buscar)
         buttonBuscar.setOnClickListener {
-
-            tvResultadoBusca.text = mensagemResultado
             val resultadoBusca: LinearLayout = root.findViewById(R.id.ll_resultado_busca_bibliotecas)
             resultadoBusca.removeAllViews()
 
             val clientAPIBiblioteca = ClientRest.criarClientBiblioteca()
 
-            clientAPIBiblioteca?.getBibliotecas()?.enqueue(object : Callback<List<Biblioteca>> {
+            clientAPIBiblioteca?.getBibliotecasPesquisa(etPesquisa.text.toString())?.enqueue(object : Callback<List<Biblioteca>> {
                 override fun onResponse(
                     call: Call<List<Biblioteca>>,
                     response: Response<List<Biblioteca>>
@@ -72,6 +69,11 @@ class PesquisaBibliotecasFragment : Fragment() {
                             transaction?.add(R.id.ll_resultado_busca_bibliotecas, fragment)
 
                         }
+
+                        val mensagemResultado = "Resultado: ${response.body()?.size} encontrados."
+                        tvResultadoBusca.text = mensagemResultado
+
+
 
                         transaction?.commit()
                     }

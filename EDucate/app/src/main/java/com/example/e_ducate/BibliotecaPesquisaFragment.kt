@@ -32,7 +32,7 @@ class BibliotecaPesquisaFragment : Fragment() {
         flBibliotecaPesquisa = view.findViewById(R.id.fl_biblioteca_pesquisa)
         flBibliotecaPesquisa.setOnClickListener {
             val argumentos = Bundle()
-            argumentos.putSerializable("dados", biblioteca)
+            argumentos.putSerializable("biblioteca", biblioteca)
             findNavController().navigate(R.id.library_visualization, argumentos)
         }
 

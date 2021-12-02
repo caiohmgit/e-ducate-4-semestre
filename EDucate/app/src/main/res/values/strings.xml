@@ -269,21 +269,21 @@
     <string name="telefone_biblioteca">Telefone</string>
     <string name="exemplo_telefone_biblioteca">ex. (11) 22222-3333</string>
     <string name="dados_da_biblioteca">Dados da Biblioteca</string>
-    <string name="title_activity_menu_bar_adm">MenuBarADM</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_menu_bar_adm" translatable="false">MenuBarADM</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="minha_biblioteca">Minha Biblioteca</string>
-    <string name="livros_em_destaque">Livros em destaque</string>
-    <string name="nome_livro_setado">Harry Potter e a câmara secreta</string>
-    <string name="autor_setado_livro">E. Lockhart</string>
-    <string name="genero_setado_livro">Aventura</string>
-    <string name="btn_voltar_aos_livros">Voltar aos Livros em Destaque</string>
-    <string name="btn_excluir_livro">Excluir Livro</string>
-    <string name="btn_retornar">Retornar</string>
-    <string name="ex_url_imagem_capa_livro">Ex. https://capa-livro.com</string>
-    <string name="url_imagem_capa_livro">URL Imagem de Capa do Livro</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="minha_biblioteca" translatable="false">Minha Biblioteca</string>
+    <string name="livros_em_destaque" translatable="false">Livros em destaque</string>
+    <string name="nome_livro_setado" translatable="false">Harry Potter e a câmara secreta</string>
+    <string name="autor_setado_livro" translatable="false">E. Lockhart</string>
+    <string name="genero_setado_livro" translatable="false">Aventura</string>
+    <string name="btn_voltar_aos_livros" translatable="false">Voltar aos Livros em Destaque</string>
+    <string name="btn_excluir_livro" translatable="false">Excluir Livro</string>
+    <string name="btn_retornar" translatable="false">Retornar</string>
+    <string name="ex_url_imagem_capa_livro" translatable="false">Ex. https://capa-livro.com</string>
+    <string name="url_imagem_capa_livro" translatable="false">URL Imagem de Capa do Livro</string>
     <string name="titulo_sucesso">Sucesso!</string>
     <string name="corpo_sucesso">Mensagem para contato enviada com sucesso</string>
     <string name="btn_sucesso">Próximo</string>

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LivroDestaqueFragment"
     android:id="@+id/fl_livro_destaque">
 
@@ -21,7 +22,7 @@
             android:layout_height="120dp"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            shapeAppearanceOverlay="@style/image_seach_biblio_item"
+            app:shapeAppearanceOverlay="@style/image_seach_biblio_item"
             />
 
         <LinearLayout
