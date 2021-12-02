@@ -95,7 +95,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress4"
+                android:id="@+id/editTextNomeCadastro"
                 android:layout_width="343dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="30dp"
@@ -120,7 +120,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPassword03"
+                android:id="@+id/editTextTelefonetCadastro"
                 android:layout_width="343dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="30dp"
@@ -145,7 +145,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPassword2"
+                android:id="@+id/editTextEmailCadastro"
                 android:layout_width="343dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="30dp"
@@ -170,7 +170,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/editTextTextPasswordCadastro"
                 android:layout_width="343dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="30dp"

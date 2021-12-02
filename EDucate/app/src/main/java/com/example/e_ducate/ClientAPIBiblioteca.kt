@@ -1,10 +1,10 @@
 package com.example.e_ducate
 
+import com.example.acessoeducateuser.models.SignInBody
+import com.example.acessoeducateuser.models.UserBody
+import okhttp3.ResponseBody
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Path
+import retrofit2.http.*
 
 interface ClientAPIBiblioteca {
 
@@ -28,5 +28,23 @@ interface ClientAPIBiblioteca {
 
     @POST("contato/{id}")
     fun postContato(@Path("id") id: Int) : Call<Contato>
+
+    // Acesso usuario
+    @Headers("Content-Type:application/json")
+    @POST("/sistema/sessao/login")
+    fun signin(@Body info: SignInBody): retrofit2.Call<ResponseBody>
+
+    @Headers("Content-Type:application/json")
+    @POST("/sistema/user/usuario")
+    fun registerUser(
+        @Body info: UserBody
+    ): retrofit2.Call<ResponseBody>
+
+    // contato
+//    @Headers("Content-Type:application/json")
+//    @POST("/sistema/contato/1")
+//    fun registerCtt(
+//        @Body info: UserBody
+//    ): retrofit2.Call<ResponseBody>
 
 }

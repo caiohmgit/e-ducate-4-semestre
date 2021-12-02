@@ -8,14 +8,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import kotlin.system.exitProcess
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import com.example.acessoeducateuser.models.UserBody
 import com.example.e_ducate.databinding.FragmentContatoBinding
 import com.example.e_ducate.databinding.FragmentHomeBinding
 import com.example.e_ducate.ui.home.HomeFragment
+import okhttp3.ResponseBody
+import retrofit2.Response
 
 
 class ContatoFragment : Fragment() {
@@ -66,7 +70,33 @@ class ContatoFragment : Fragment() {
     }
 
 
-
+//    private fun signup(nome: String, email: String, senha: String,
+//                       telefone: String){
+//        val retIn = ClientRest.criarClientBiblioteca()!!
+//        val registerInfo = UserBody(nome,email,senha,telefone)
+//
+//        retIn.registerCtt(registerInfo).enqueue(object :
+//            retrofit2.Callback<ResponseBody> {
+//            override fun onFailure(call: retrofit2.Call<ResponseBody>, t: Throwable) {
+//                Toast.makeText(
+//                    applicationContext,
+//                    t.message,
+//                    Toast.LENGTH_SHORT
+//                ).show()
+//            }
+//            override  fun onResponse(call: retrofit2.Call<ResponseBody>, response: Response<ResponseBody>) {
+//                if (response.code() == 201) {
+//                    Toast.makeText(applicationContext, "Registration success!", Toast.LENGTH_SHORT)
+//                        .show()
+//
+//                }
+//                else{
+//                    Toast.makeText(applicationContext, "Registration failed!", Toast.LENGTH_SHORT)
+//                        .show()
+//                }
+//            }
+//        })
+//    }
 
 
 }

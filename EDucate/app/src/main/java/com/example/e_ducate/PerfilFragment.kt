@@ -14,6 +14,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.e_ducate.databinding.FragmentAjudaBinding
 import com.example.e_ducate.databinding.FragmentPerfilBinding
 import com.squareup.picasso.Picasso
+import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
